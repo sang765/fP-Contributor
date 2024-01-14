@@ -16,4 +16,8 @@
     "791222882499690519": [
         { "id": "Rony", "description": "Rony", "icon": "https://cdn.discordapp.com/emojis/1121437697949573221.png", "link": "https://rony.lol/" }
     ]
+    ,
+    "791222882499690519": [
+        { "id": "early_supporter", "description": "Early Supporter", "icon": "https://cdn.discordapp.com/badge-icons/7060786766c9c840eb3019e725d2b358.png", "link": "https://discord.com/settings/premium" }
+    ]
 }

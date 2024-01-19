@@ -6,7 +6,6 @@
 
 // This plugin is a port from Alyxia's Vendetta plugin
 import { definePluginSettings } from "@api/Settings";
-import { Devs } from "@utils/constants";
 import { copyWithToast } from "@utils/misc";
 import definePlugin, { OptionType } from "@utils/types";
 import { Forms } from "@webpack/common";
@@ -193,7 +192,10 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "Effecto",
     description: "Use discord profile effects without nitro.",
-    authors: [{ id: 984015688807100419n, name: "Sampath" }],
+    authors: [{
+        name: "Sampath",
+        id: 984015688807100419n
+    }],
     patches: [
         {
             find: "UserProfileStore",

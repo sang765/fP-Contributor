@@ -4,7 +4,6 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-// This plugin is a port from Alyxia's Vendetta plugin
 import { Link } from "@components/Link";
 import definePlugin from "@utils/types";
 import { User } from "discord-types/general";

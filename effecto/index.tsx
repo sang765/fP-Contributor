@@ -57,7 +57,6 @@ export default definePlugin({
         if (user) {
             if (user.profileEffectId) return user;
             const profileeffect = getUserEffect(user.userId);
-            console.log("users", profileeffect);
             if (profileeffect) {
                 return virtualMerge(user, {
                     premiumType: 2,

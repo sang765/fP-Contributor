@@ -8,13 +8,13 @@ import { ApplicationCommandInputType, sendBotMessage } from "@api/Commands";
 import { definePluginSettings } from "@api/Settings";
 import ErrorBoundary from "@components/ErrorBoundary";
 import { Link } from "@components/Link";
+import { Devs } from "@utils/constants";
 import { Margins } from "@utils/margins";
 import { copyWithToast } from "@utils/misc";
 import definePlugin, { OptionType } from "@utils/types";
 import { Button, Forms } from "@webpack/common";
 import { User } from "discord-types/general";
 import virtualMerge from "virtual-merge";
-import { Devs } from "@utils/constants";
 
 interface UserProfile extends User {
     profileEffectId?: number;

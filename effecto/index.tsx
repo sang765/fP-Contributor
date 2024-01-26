@@ -95,8 +95,8 @@ const settings = definePluginSettings({
 });
 
 export default definePlugin({
-    name: "Effecto",
-    description: "Use discord profile effects without nitro.",
+    name: "fakeProfile",
+    description: "Use discord profile effects and themes without nitro.",
     authors: [{
         name: "Sampath",
         id: 984015688807100419n
@@ -121,7 +121,7 @@ export default definePlugin({
         }
     ],
     settingsAboutComponent: () => (
-        <Link href="https://github.com/sampathgujarathi/ProfileEffects/#how-to-get-profile-effects">CLICK HERE TO GET PROFILE EFFECTS</Link>
+        <Link href="https://github.com/sampathgujarathi/fakeProfile/#how-to-get-profile-effects">CLICK HERE TO GET PROFILE EFFECTS</Link>
     ),
     settings,
     profileDecodeHook(user: UserProfile) {

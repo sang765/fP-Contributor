@@ -100,7 +100,7 @@ export default definePlugin({
     authors: [{
         name: "Sampath",
         id: 984015688807100419n
-    }],
+    },Devs.Alyxia, Devs.Remty],
     async start() {
         await loadEffects();
     },

@@ -4,11 +4,16 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+import { ApplicationCommandInputType, sendBotMessage } from "@api/Commands";
+import { definePluginSettings } from "@api/Settings";
+import ErrorBoundary from "@components/ErrorBoundary";
 import { Link } from "@components/Link";
-import definePlugin from "@utils/types";
+import { Margins } from "@utils/margins";
+import { copyWithToast } from "@utils/misc";
+import definePlugin, { OptionType } from "@utils/types";
+import { Button } from "@webpack/common";
 import { User } from "discord-types/general";
 import virtualMerge from "virtual-merge";
-
 
 interface UserProfile extends User {
     profileEffectId?: number;
@@ -20,16 +25,74 @@ async function loadEffects(noCache = false) {
     const init = {} as RequestInit;
     if (noCache)
         init.cache = "no-cache";
-    const response = await fetch("https://raw.githubusercontent.com/sampathgujarathi/ProfileEffects/main/userprofiles.json", init);
+    const response = await fetch("https://i.sampath.tech/users/effecto", init);
     const data = await response.json();
     UserEffects = data;
+    console.log("Updated database!", data);
 }
 
 function getUserEffect(profileId: string) {
     const userEffect = UserEffects[profileId];
     return userEffect || [];
 }
+interface UserProfile extends User {
+    themeColors?: Array<number>;
+}
 
+interface Colors {
+    primary: number;
+    accent: number;
+}
+
+function encode(primary: number, accent: number): string {
+    const message = `[#${primary.toString(16).padStart(6, "0")},#${accent.toString(16).padStart(6, "0")}]`;
+    const padding = "";
+    const encoded = Array.from(message)
+        .map(x => x.codePointAt(0))
+        .filter(x => x! >= 0x20 && x! <= 0x7f)
+        .map(x => String.fromCodePoint(x! + 0xe0000))
+        .join("");
+
+    return (padding || "") + " " + encoded;
+}
+
+// Courtesy of Cynthia.
+function decode(bio: string): Array<number> | null {
+    if (bio == null) return null;
+
+    const colorString = bio.match(
+        /\u{e005b}\u{e0023}([\u{e0061}-\u{e0066}\u{e0041}-\u{e0046}\u{e0030}-\u{e0039}]+?)\u{e002c}\u{e0023}([\u{e0061}-\u{e0066}\u{e0041}-\u{e0046}\u{e0030}-\u{e0039}]+?)\u{e005d}/u,
+    );
+    if (colorString != null) {
+        const parsed = [...colorString[0]]
+            .map(x => String.fromCodePoint(x.codePointAt(0)! - 0xe0000))
+            .join("");
+        const colors = parsed
+            .substring(1, parsed.length - 1)
+            .split(",")
+            .map(x => parseInt(x.replace("#", "0x"), 16));
+
+        return colors;
+    } else {
+        return null;
+    }
+}
+
+
+const settings = definePluginSettings({
+    enableProfileEffects: {
+        description: "Allows you to use profile effects",
+        type: OptionType.BOOLEAN,
+        default: true,
+        restartNeeded: true
+    },
+    enableProfileThemes: {
+        description: "Allows you to use profile themes",
+        type: OptionType.BOOLEAN,
+        default: false,
+        restartNeeded: true
+    }
+});
 
 export default definePlugin({
     name: "Effecto",
@@ -48,22 +111,70 @@ export default definePlugin({
                 match: /(?<=getUserProfile\(\i\){return )(\i\[\i\])/,
                 replace: "$self.profileDecodeHook($1)"
             }
+        },
+        {
+            find: ".USER_SETTINGS_PROFILE_THEME_ACCENT",
+            replacement: {
+                match: /RESET_PROFILE_THEME}\)(?<=color:(\i),.{0,500}?color:(\i),.{0,500}?)/,
+                replace: "$&,$self.addCopy3y3Button({primary:$1,accent:$2})"
+            }
         }
     ],
     settingsAboutComponent: () => (
         <Link href="https://github.com/sampathgujarathi/ProfileEffects/#how-to-get-profile-effects">CLICK HERE TO GET PROFILE EFFECTS</Link>
     ),
+    settings,
     profileDecodeHook(user: UserProfile) {
         if (user) {
-            if (user.profileEffectId) return user;
-            const profileeffect = getUserEffect(user.userId);
-            if (profileeffect) {
-                return virtualMerge(user, {
-                    premiumType: 2,
-                    profileEffectId: profileeffect
-                });
+            if (settings.store.enableProfileEffects || settings.store.enableProfileThemes) {
+                let mergeData: Partial<UserProfile> = {}; // Use Partial to allow merging
+
+                if (settings.store.enableProfileEffects) {
+                    const profileEffect = getUserEffect(user.userId);
+                    mergeData = {
+                        ...mergeData,
+                        premiumType: 2,
+                        profileEffectId: profileEffect
+                    };
+                }
+
+                if (settings.store.enableProfileThemes) {
+                    const colors = decode(user.bio);
+                    mergeData = {
+                        ...mergeData,
+                        themeColors: colors
+                    };
+                }
+
+                return virtualMerge(user, mergeData as UserProfile); // Cast back to UserProfile
             }
+            return user;
         }
+
         return user;
-    }
+    },
+    commands: [
+        {
+            name: "reload",
+            description: "Reloads profile effects",
+            options: [], // Add options if needed
+            inputType: ApplicationCommandInputType.BOT,
+            execute: async (opts, ctx) => {
+                await loadEffects(true);
+                sendBotMessage(ctx.channel.id, { content: "Reloaded profile effects" });
+            },
+        },
+    ],
+    addCopy3y3Button: ErrorBoundary.wrap(function ({ primary, accent }: Colors) {
+        return <Button
+            onClick={() => {
+                const colorString = encode(primary, accent);
+                copyWithToast(colorString);
+            }}
+            color={Button.Colors.PRIMARY}
+            size={Button.Sizes.XLARGE}
+            className={Margins.left16}
+        >Copy 3y3
+        </Button >;
+    }, { noop: true }),
 });

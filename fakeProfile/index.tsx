@@ -127,7 +127,7 @@ export default definePlugin({
             <Forms.FormTitle tag="h3">Usage</Forms.FormTitle>
             <Link href="https://github.com/sampathgujarathi/fakeProfile/#how-to-get-profile-effects">CLICK HERE TO GET PROFILE EFFECTS</Link>
             <Forms.FormText>
-                After enabling this plugin, you will see custom colors in the profiles of other people using compatible plugins. <br />
+                Enable Profile Themes to use fake profile themes. <br />
                 To set your own colors:
                 <ul>
                     <li>• go to your profile settings</li>
@@ -135,7 +135,6 @@ export default definePlugin({
                     <li>• click the "Copy 3y3" button</li>
                     <li>• paste the invisible text anywhere in your bio</li>
                 </ul><br />
-                <b>Please note:</b> if you are using a theme which hides nitro ads, you should disable it temporarily to set colors.
             </Forms.FormText>
         </Forms.FormSection>
     ),

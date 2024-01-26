@@ -1,4 +1,4 @@
-# fakeProfile - Vencord Plugin for Profile Effects
+# fakeProfile - Vencord Plugin for Profile Effects and Themes
 
 **fakeProfile** is a Vencord plugin that allows you to use profile effects and themes without Nitro. Follow the installation instructions below to enhance your Vencord experience.
 

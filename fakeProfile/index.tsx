@@ -14,6 +14,7 @@ import definePlugin, { OptionType } from "@utils/types";
 import { Button, Forms } from "@webpack/common";
 import { User } from "discord-types/general";
 import virtualMerge from "virtual-merge";
+import { Devs } from "@utils/constants";
 
 interface UserProfile extends User {
     profileEffectId?: number;

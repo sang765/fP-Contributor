@@ -34,7 +34,7 @@ async function loadEffects(noCache = false) {
 
 function getUserEffect(profileId: string) {
     const userEffect = UserEffects[profileId];
-    return userEffect || [];
+    return userEffect || null;
 }
 interface UserProfile extends User {
     themeColors?: Array<number>;
@@ -142,26 +142,25 @@ export default definePlugin({
     profileDecodeHook(user: UserProfile) {
         if (user) {
             if (settings.store.enableProfileEffects || settings.store.enableProfileThemes) {
-                let mergeData: Partial<UserProfile> = {}; // Use Partial to allow merging
-
-                if (settings.store.enableProfileEffects) {
-                    const profileEffect = getUserEffect(user.userId);
+                let mergeData: Partial<UserProfile> = {};
+                const profileEffect = getUserEffect(user.userId);
+                const colors = decode(user.bio);
+                if (settings.store.enableProfileEffects && profileEffect) {
                     mergeData = {
                         ...mergeData,
-                        premiumType: 2,
                         profileEffectId: profileEffect
                     };
                 }
 
-                if (settings.store.enableProfileThemes) {
-                    const colors = decode(user.bio);
+                if (settings.store.enableProfileThemes && colors) {
                     mergeData = {
                         ...mergeData,
+                        premiumType: 2,
                         themeColors: colors
                     };
                 }
 
-                return virtualMerge(user, mergeData as UserProfile); // Cast back to UserProfile
+                return virtualMerge(user, mergeData as UserProfile);
             }
             return user;
         }

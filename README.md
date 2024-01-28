@@ -7,7 +7,7 @@
 1. Follow the [Vencord plugin guide](https://github.com/Vendicated/Vencord/blob/main/docs/1_INSTALLING.md) if you haven't already.
 2. Download the ts file from this repository and drag it into `Vencord\Vencord\src\userplugins`.
 3. Run `pnpm build` from the command prompt in your Vencord directory.
-4. Restart your Discord and enable the Effecto plugin.
+4. Restart your Discord and enable the fakeProfile plugin (Make sure you turn of fakeprofilethemes).
 
 ## How to Get Profile Effects
 

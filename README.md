@@ -1,6 +1,6 @@
 # fakeProfile - Vencord Plugin for Profile Effects and Themes
 
-**fakeProfile** is a Vencord plugin that allows you to use profile effects and themes without Nitro. Follow the installation instructions below to enhance your Vencord experience.
+**fakeProfile** is a Vencord plugin that allows you to use profile effects and themes without Nitro and get custom badges. Follow the installation instructions below to enhance your Vencord experience.
 
 ## Install Instructions
 
@@ -21,3 +21,10 @@
 2. Choose your own colors in the Nitro preview
 3. Click the "Copy 3y3" button
 4. Paste the invisible text anywhere in your bio
+
+## How to Get Custom Badge
+
+1. Join the [Discord Server](https://discord.gg/ffmkewQ4R7) and go to [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927/).
+2. Use `/add_badge` and enter the details of the badge like icon url,name,description.
+3. Wait for the approval of your badge.
+4. Use `/refesh` after getting your badge approved!

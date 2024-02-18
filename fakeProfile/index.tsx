@@ -77,8 +77,11 @@ async function loadfakeProfile(noCache = false) {
 }
 
 function getUserEffect(profileId: string) {
-    const userEffect = UsersData[profileId].profile_effect;
-    return userEffect || null;
+    const userEffect = UsersData[profileId];
+    if (userEffect) {
+        return UsersData[profileId].profile_effect || null;
+    }
+    return null;
 }
 interface UserProfile extends User {
     themeColors?: Array<number>;

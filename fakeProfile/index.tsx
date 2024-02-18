@@ -229,7 +229,7 @@ export default definePlugin({
             execute: async (opts, ctx) => {
                 removeBadgesForAllUsers();
                 await loadfakeProfile(true);
-                addBadgesForAllUsers(CustomBadges);
+                addBadgesForAllUsers();
                 sendBotMessage(ctx.channel.id, { content: "Reloaded profile effects and custom badges" });
             },
         },

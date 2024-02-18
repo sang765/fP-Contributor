@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+import { addBadge, BadgePosition, ProfileBadge, removeBadge } from "@api/Badges";
 import { ApplicationCommandInputType, sendBotMessage } from "@api/Commands";
 import { definePluginSettings } from "@api/Settings";
 import ErrorBoundary from "@components/ErrorBoundary";
@@ -16,24 +17,67 @@ import { Button, Forms } from "@webpack/common";
 import { User } from "discord-types/general";
 import virtualMerge from "virtual-merge";
 
+type Badge = {
+    id: string;
+    description: string;
+    icon: string;
+    link?: string;
+};
+
 interface UserProfile extends User {
     profileEffectId?: number;
 }
-let UserEffects = {} as Record<string, string>;
+let UsersData = {} as Record<string, string>;
+const UserBadges: Record<string, ProfileBadge[]> = {};
+const addBadgesForAllUsers = () => {
+    Object.keys(UsersData).forEach(userId => {
+        const userBadges = UsersData[userId].badges;
+        if (userBadges) {
+            userBadges.forEach((badge: Badge) => {
+                const newBadge: ProfileBadge = {
+                    description: badge.description,
+                    image: badge.icon,
+                    position: BadgePosition.START,
+                    props: {
+                        style: {
+                            borderRadius: "50%",
+                            transform: "scale(0.9)"
+                        }
+                    },
+                    shouldShow: user => user.user.id === userId,
+                };
+                addBadge(newBadge);
+                if (!UserBadges[userId]) {
+                    UserBadges[userId] = [];
+                }
+                UserBadges[userId].push(newBadge);
+            });
+        }
+    });
+};
 
-async function loadEffects(noCache = false) {
-    UserEffects = {};
+const removeBadgesForAllUsers = () => {
+    Object.keys(UserBadges).forEach(userId => {
+        const userBadges = UserBadges[userId].badges;
+        if (userBadges) {
+            userBadges.forEach(badge => {
+                removeBadge(badge);
+            });
+        }
+    });
+};
+async function loadfakeProfile(noCache = false) {
+    UsersData = {};
     const init = {} as RequestInit;
     if (noCache)
         init.cache = "no-cache";
-    const response = await fetch("https://i.sampath.tech/users/fakeProfile", init);
+    const response = await fetch("https://i.sampath.tech/v2/users/fakeProfile", init);
     const data = await response.json();
-    UserEffects = data;
-    console.log("Updated database!", data);
+    UsersData = data;
 }
 
 function getUserEffect(profileId: string) {
-    const userEffect = UserEffects[profileId];
+    const userEffect = UsersData[profileId].profile_effect;
     return userEffect || null;
 }
 interface UserProfile extends User {
@@ -92,18 +136,27 @@ const settings = definePluginSettings({
         type: OptionType.BOOLEAN,
         default: false,
         restartNeeded: true
+    },
+    enableCustomBadges: {
+        description: "Allows you to use custom badges",
+        type: OptionType.BOOLEAN,
+        default: false,
+        restartNeeded: true
     }
 });
 
 export default definePlugin({
     name: "fakeProfile",
-    description: "Use discord profile effects and themes without nitro.",
+    description: "Use discord profile effects, themes without nitro and get custom badges.",
     authors: [{
         name: "Sampath",
-        id: 984015688807100419n
+        id: 984015688807100419n,
     }, Devs.Alyxia, Devs.Remty],
     async start() {
-        await loadEffects();
+        await loadfakeProfile();
+        if (settings.store.enableCustomBadges) {
+            addBadgesForAllUsers();
+        }
     },
     patches: [
         {
@@ -125,7 +178,7 @@ export default definePlugin({
 
         <Forms.FormSection>
             <Forms.FormTitle tag="h3">Usage</Forms.FormTitle>
-            <Link href="https://github.com/sampathgujarathi/fakeProfile/#how-to-get-profile-effects">CLICK HERE TO GET PROFILE EFFECTS</Link>
+            <Link href="https://github.com/sampathgujarathi/fakeProfile/#how-to-get-profile-effects">CLICK HERE TO GET PROFILE EFFECTS OR CUSTOM BADGES</Link>
             <Forms.FormText>
                 Enable Profile Themes to use fake profile themes. <br />
                 To set your own colors:
@@ -170,12 +223,14 @@ export default definePlugin({
     commands: [
         {
             name: "reload",
-            description: "Reloads profile effects",
-            options: [], // Add options if needed
+            description: "Reloads profile effects and custom badges",
+            options: [],
             inputType: ApplicationCommandInputType.BOT,
             execute: async (opts, ctx) => {
-                await loadEffects(true);
-                sendBotMessage(ctx.channel.id, { content: "Reloaded profile effects" });
+                removeBadgesForAllUsers();
+                await loadfakeProfile(true);
+                addBadgesForAllUsers(CustomBadges);
+                sendBotMessage(ctx.channel.id, { content: "Reloaded profile effects and custom badges" });
             },
         },
     ],

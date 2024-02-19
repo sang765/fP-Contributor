@@ -153,7 +153,7 @@ const settings = definePluginSettings({
         restartNeeded: true
     },
     nitroFirst: {
-        description: "Banner to use if both Nitro and fakeProfile banners and avatar are present",
+        description: "Banner/Avatar to use if both Nitro and fakeProfile banners/avatar are present",
         type: OptionType.SELECT,
         options: [
             { label: "Nitro", value: true, default: true },

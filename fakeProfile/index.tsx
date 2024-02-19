@@ -7,6 +7,7 @@
 import { addBadge, BadgePosition, ProfileBadge, removeBadge } from "@api/Badges";
 import { ApplicationCommandInputType, sendBotMessage } from "@api/Commands";
 import { definePluginSettings } from "@api/Settings";
+import { enableStyle } from "@api/Styles";
 import ErrorBoundary from "@components/ErrorBoundary";
 import { Link } from "@components/Link";
 import { Devs } from "@utils/constants";
@@ -16,6 +17,9 @@ import definePlugin, { OptionType } from "@utils/types";
 import { Button, Forms } from "@webpack/common";
 import { User } from "discord-types/general";
 import virtualMerge from "virtual-merge";
+
+import style from "./index.css?managed";
+
 
 type Badge = {
     id: string;
@@ -31,9 +35,9 @@ let UsersData = {} as Record<string, string>;
 const UserBadges: Record<string, ProfileBadge[]> = {};
 const addBadgesForAllUsers = () => {
     Object.keys(UsersData).forEach(userId => {
-        const userBadges = UsersData[userId].badges;
-        if (userBadges) {
-            userBadges.forEach((badge: Badge) => {
+        const userBadges_ = UsersData[userId].badges;
+        if (userBadges_) {
+            userBadges_.forEach((badge: Badge) => {
                 const newBadge: ProfileBadge = {
                     description: badge.description,
                     image: badge.icon,
@@ -51,6 +55,7 @@ const addBadgesForAllUsers = () => {
                     UserBadges[userId] = [];
                 }
                 UserBadges[userId].push(newBadge);
+                console.log(UserBadges);
             });
         }
     });
@@ -58,11 +63,12 @@ const addBadgesForAllUsers = () => {
 
 const removeBadgesForAllUsers = () => {
     Object.keys(UserBadges).forEach(userId => {
-        const userBadges = UserBadges[userId].badges;
+        const userBadges = UserBadges[userId];
         if (userBadges) {
             userBadges.forEach(badge => {
                 removeBadge(badge);
             });
+            UserBadges[userId] = [];
         }
     });
 };
@@ -145,6 +151,20 @@ const settings = definePluginSettings({
         type: OptionType.BOOLEAN,
         default: false,
         restartNeeded: true
+    },
+    nitroFirst: {
+        description: "Banner to use if both Nitro and fakeProfile banners and avatar are present",
+        type: OptionType.SELECT,
+        options: [
+            { label: "Nitro", value: true, default: true },
+            { label: "fakeProfile", value: false },
+        ]
+    },
+    voiceBackground: {
+        description: "Use fakeProfile banners as voice chat backgrounds",
+        type: OptionType.BOOLEAN,
+        default: true,
+        restartNeeded: true
     }
 });
 
@@ -154,8 +174,9 @@ export default definePlugin({
     authors: [{
         name: "Sampath",
         id: 984015688807100419n,
-    }, Devs.Alyxia, Devs.Remty],
+    }, Devs.Alyxia, Devs.Remty, Devs.AutumnVN, Devs.pylix, Devs.TheKodeToad],
     async start() {
+        enableStyle(style);
         await loadfakeProfile();
         if (settings.store.enableCustomBadges) {
             addBadgesForAllUsers();
@@ -175,13 +196,53 @@ export default definePlugin({
                 match: /RESET_PROFILE_THEME}\)(?<=color:(\i),.{0,500}?color:(\i),.{0,500}?)/,
                 replace: "$&,$self.addCopy3y3Button({primary:$1,accent:$2})"
             }
+        },
+        {
+            find: ".NITRO_BANNER,",
+            replacement: [
+                {
+                    match: /(\i)\.premiumType/,
+                    replace: "$self.premiumHook($1)||$&"
+                },
+                {
+                    match: /(?<=function \i\((\i)\)\{)(?=var.{30,50},bannerSrc:)/,
+                    replace: "$1.bannerSrc=$self.useBannerHook($1);"
+                },
+                {
+                    match: /\?\(0,\i\.jsx\)\(\i,{type:\i,shown/,
+                    replace: "&&$self.shouldShowBadge(arguments[0])$&"
+                }
+            ]
+        },
+        {
+            find: "\"data-selenium-video-tile\":",
+            predicate: () => settings.store.voiceBackground,
+            replacement: [
+                {
+                    match: /(?<=function\((\i),\i\)\{)(?=let.{20,40},style:)/,
+                    replace: "$1.style=$self.voiceBackgroundHook($1);"
+                }
+            ]
+        },
+        {
+            find: "getUserAvatarURL:",
+            replacement: [
+                {
+                    match: /(getUserAvatarURL:)(\i),/,
+                    replace: "$1$self.getAvatarHook($2),"
+                },
+                {
+                    match: /(getUserAvatarURL:\i\(\){return )(\i)}/,
+                    replace: "$1$self.getAvatarHook($2)}"
+                }
+            ]
         }
     ],
     settingsAboutComponent: () => (
 
         <Forms.FormSection>
             <Forms.FormTitle tag="h3">Usage</Forms.FormTitle>
-            <Link href="https://github.com/sampathgujarathi/fakeProfile/#how-to-get-profile-effects">CLICK HERE TO GET PROFILE EFFECTS OR CUSTOM BADGES</Link>
+            <Link href="https://github.com/sampathgujarathi/fakeProfile/#how-to-get-profile-effects">CLICK HERE TO GET PROFILE EFFECTS, CUSTOM BADGES, BANNER OR ANIMATED PFP</Link>
             <Forms.FormText>
                 Enable Profile Themes to use fake profile themes. <br />
                 To set your own colors:
@@ -223,17 +284,47 @@ export default definePlugin({
 
         return user;
     },
+    voiceBackgroundHook({ className, participantUserId }: any) {
+        if (className.includes("tile_")) {
+            if (UsersData[participantUserId]) {
+                return {
+                    backgroundImage: `url(${UsersData[participantUserId].banner})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat"
+                };
+            }
+        }
+    },
+
+    useBannerHook({ displayProfile, user }: any) {
+        if (displayProfile?.banner && settings.store.nitroFirst) return;
+        if (UsersData[user.id] && UsersData[user.id].banner) return UsersData[user.id].banner;
+    },
+
+    premiumHook({ userId }: any) {
+        if (UsersData[userId]) return 2;
+    },
+
+    shouldShowBadge({ displayProfile, user }: any) {
+        return displayProfile?.banner && (UsersData[user.id] || settings.store.nitroFirst);
+    },
+    getAvatarHook: (original: any) => (user: User, animated: boolean, size: number) => {
+        if (!settings.store.nitroFirst && user.avatar?.startsWith("a_")) return original(user, animated, size);
+
+        return UsersData[user.id]?.avatar ?? original(user, animated, size);
+    },
     commands: [
         {
             name: "reload",
-            description: "Reloads profile effects and custom badges",
+            description: "Reloads fakeProfile",
             options: [],
             inputType: ApplicationCommandInputType.BOT,
             execute: async (opts, ctx) => {
                 removeBadgesForAllUsers();
                 await loadfakeProfile(true);
                 addBadgesForAllUsers();
-                sendBotMessage(ctx.channel.id, { content: "Reloaded profile effects and custom badges" });
+                sendBotMessage(ctx.channel.id, { content: "Reloaded fakeProfile" });
             },
         },
     ],

@@ -6,7 +6,26 @@
   A most plugin about <strong>all in one</strong> profile plugin for <a href="https://vencord.dev/"><strong>Vencord</strong></a>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"></a>
+  <a href="https://discord.gg/ffmkewQ4R7"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Server"></a>
+</p>
+<p align="center">
+<a href="https://vencord.dev"><img src="https://img.shields.io/badge/This%20plugin%20for-Vencord-pink?labelColor=gray&style=flat&logo=https://lh3.googleusercontent.com/zDATisIeInAwNSjH9LgItgvGXwq3M4SDdoIZzctMZ3Hbl9IhoFVJtsHvzQPz_a7K5xbdURropceVQK6XGrmg4v4HSQ=s60&link=https://vencord.dev" alt="This plugin for" /></a>
+</p>
+
 <!-- Empty line -->
+
+## 🖥️Selection
+
+ - [fakeProfile](#fakeProfile)
+   - [❓What is fakeProfile?](#❓what-is-fakeprofile?)
+   - [🔨Installation](#🔨installation)
+   - [❓Tutorial about plugin](#❓tutorial-about-plugin)
+   - [❔QnA](#❔qna)
+
+<!-- Empty line -->
+
 
 ## ❓What is fakeProfile?
 <div align="center">
@@ -18,15 +37,18 @@
  - Custom avatar (Animated)
  - Choose profile effect (Without Nitro)
  - Choose profile theme colors (Without Nitro)
- - Choose Custom Badges
  - Choose and custom decoration (Coming Soon...)
  - Reload database without restart client (This plugin used `/reload` to reload database)
 
 <!-- Empty line -->
 
-## 🔨How to install or update fakeProfile plugin?
+## 🔨Installation
  ### 1. Requirement
  - The version you are using is **Vencord DEV Build**. If you don't know how to install then you can [click here](https://github.com/Vendicated/Vencord/blob/main/docs/1_INSTALLING.md) to read the installation instructions.
+
+ - Youtube video install Vencord DEV Build by [@daveyy1](https://discordappuser.com/users/549244932213309442): *Click image below to watch tutorial*
+
+ [![Tutorial Install Third Party Plugin](https://img.youtube.com/vi/8wexjSo8fNw/maxresdefault.jpg)](https://www.youtube.com/watch?v=8wexjSo8fNw)
 
  ### 2. Install Plugin
  Open **Windows Explorer** and select the path where you installed **Vencord** and click on the `src` folder. In the folder you just clicked, create a new folder named `userplugins` *(in case you already have that folder, you can skip creating the `userplugins` folder)*.
@@ -34,30 +56,30 @@
  - In the `userplugins` folder click on the address bar and type **cmd** and press **enter**.
 
  In **Command Prompt** used this command:
- ```
+ ```shell
  git clone https://github.com/sampathgujarathi/fakeProfile.git
  ```
 
  After typing the command line, wait until the download is completed and then type:
- ```
+ ```shell
  pnpm build
  ```
  And that all. Now you can restart Discord and check **fakeProfile** in **Plugins** setting.
 
  ### 3. How to update fakeProfile plugin?
  - Goto `Vencord\src\userplugins\fakeProfile` in adress bar type **cmd** and click to **Command Prompt** type:
- ```
+ ```shell
  git pull
  ```
  - Then type:
- ```
+ ```shell
  pnpm build
  ```
- That all.
+ That all. Restart your Discord client and enjoy.
 
 <!-- Empty line -->
 
-## ❓How to request a Banner, Avatar, Badge, ...
+## ❓Tutorial about plugin
 > ✏️ **Note:** You must join our Discord server to request banners, avatars and badges. You can [click here](https://discord.gg/ffmkewQ4R7) and it will take you straight to our Discord server.
 
  ### 1. How to request banner?
@@ -89,7 +111,7 @@
  - Used command `/badge_add` like this:
  <img src="https://media.discordapp.net/attachments/998071689009184870/1209412234866855996/image.png?ex=65e6d3ea&is=65d45eea&hm=361f4aa531ad23ca63ff63220602702b769054ee3584eb335d3eb88bd3005d4b&=&format=webp&quality=lossless&width=1164&height=51" alt="badge_add commands">
  - Wait your request approved in [#badge-log](https://discord.com/channels/1117373291095662623/1198555327730294844) and use `/reload` command to reload database and enjoy.
-   
+
  ### 5. How to manager and remove my badges?
  - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
  - Used `/my_badges` like this image:

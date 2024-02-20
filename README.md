@@ -6,8 +6,11 @@
   A most plugin about <strong>all in one</strong> profile plugin for <a href="https://vencord.dev/"><strong>Vencord</strong></a>
 </p>
 
+
+
 <p align="center">
   <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"></a>
+  <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="CSS"></a>
   <a href="https://discord.gg/ffmkewQ4R7"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Server"></a>
 </p>
 <p align="center">
@@ -104,6 +107,7 @@
  - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
  - Used command `/effects` like this:
   <img src="https://media.discordapp.net/attachments/998071689009184870/1209402089378422785/image.png?ex=65e6ca77&is=65d45577&hm=eddf86c225a7956b277fa9a1e596fcedcb42af670de49b16200c2f1459911013&=&format=webp&quality=lossless&width=1163&height=52" alt="effects commands">
+  
  - Choose a effect and click **apply** button
  - After that used `/reload` to reload database and enjoy.
 
@@ -111,6 +115,7 @@
  - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
  - Used command `/badge_add` like this:
  <img src="https://media.discordapp.net/attachments/998071689009184870/1209412234866855996/image.png?ex=65e6d3ea&is=65d45eea&hm=361f4aa531ad23ca63ff63220602702b769054ee3584eb335d3eb88bd3005d4b&=&format=webp&quality=lossless&width=1164&height=51" alt="badge_add commands">
+
  - Wait your request approved in [#badge-log](https://discord.com/channels/1117373291095662623/1198555327730294844) and use `/reload` command to reload database and enjoy.
 
  ### 5. How to manager and remove my badges?
@@ -120,7 +125,7 @@
 
  - You can manager or remove badged with command
  <img src="https://cdn.discordapp.com/attachments/1198578773092745357/1209418170624901200/image.png?ex=65e6d971&is=65d46471&hm=d8be9a0ef89600b66046516b521db1a2d52bdd270bdc28438dc84b89f2a08551&" alt="bageds manager">
- 
+
  - Used `/reload` to reload database and done.
 
 <!-- Empty line -->

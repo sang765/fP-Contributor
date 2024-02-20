@@ -40,7 +40,7 @@
  - Custom avatar (Animated)
  - Choose profile effect (Without Nitro)
  - Choose profile theme colors (Without Nitro)
- - Choose and custom decoration (Coming Soon...)
+ - Choose custom decoration (Coming Soon...)
  - Choose custom badges
  - Reload database without restart client (This plugin used `/reload` to reload database)
 

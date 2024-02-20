@@ -127,7 +127,7 @@
 
 ## ❔QnA
  ### 1. Can everyone in Discord see my profile?
- - No, only people who also use the plugin will see the changes.
+ - No, only people who also use this plugin will see the changes.
  ### 2. If I leave the Discord server, will everything on my profile be lost?
  - No, because your requests will be saved in the plugin's database, so if you leave the server, nothing changes. *(unless you turn off the fakeProfile plugin, everything will return to the way it was when you didn't use this plugin)*
  ### 3. So what happens if I disable fakeProfile plugin?

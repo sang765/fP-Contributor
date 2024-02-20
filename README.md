@@ -38,6 +38,7 @@
  - Choose profile effect (Without Nitro)
  - Choose profile theme colors (Without Nitro)
  - Choose and custom decoration (Coming Soon...)
+ - Choose Custom Badges
  - Reload database without restart client (This plugin used `/reload` to reload database)
 
 <!-- Empty line -->

@@ -89,7 +89,7 @@
  - Used command `/badge_add` like this:
  <img src="https://media.discordapp.net/attachments/998071689009184870/1209412234866855996/image.png?ex=65e6d3ea&is=65d45eea&hm=361f4aa531ad23ca63ff63220602702b769054ee3584eb335d3eb88bd3005d4b&=&format=webp&quality=lossless&width=1164&height=51" alt="badge_add commands">
  - Wait your request approved in [#badge-log](https://discord.com/channels/1117373291095662623/1198555327730294844) and use `/reload` command to reload database and enjoy.
-
+   
  ### 5. How to manager and remove my badges?
  - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
  - Used `/my_badges` like this image:

@@ -38,7 +38,7 @@
  - Choose profile effect (Without Nitro)
  - Choose profile theme colors (Without Nitro)
  - Choose and custom decoration (Coming Soon...)
- - Choose Custom Badges
+ - Choose custom badges
  - Reload database without restart client (This plugin used `/reload` to reload database)
 
 <!-- Empty line -->
@@ -47,7 +47,7 @@
  ### 1. Requirement
  - The version you are using is **Vencord DEV Build**. If you don't know how to install then you can [click here](https://github.com/Vendicated/Vencord/blob/main/docs/1_INSTALLING.md) to read the installation instructions.
 
- - Youtube video install Vencord DEV Build by [@daveyy1](https://discordappuser.com/users/549244932213309442): *Click image below to watch tutorial*
+ - Youtube video install Vencord DEV Build by [@daveyy1](https://discordappuser.com/users/549244932213309442): *Click image below to watch totorial*
 
  [![Tutorial Install Third Party Plugin](https://img.youtube.com/vi/8wexjSo8fNw/maxresdefault.jpg)](https://www.youtube.com/watch?v=8wexjSo8fNw)
 
@@ -117,8 +117,10 @@
  - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
  - Used `/my_badges` like this image:
  <img src="https://cdn.discordapp.com/attachments/998071689009184870/1209419333219000371/image.png?ex=65e6da86&is=65d46586&hm=542f580c9d20c1048b8e7e0ed2b431a25cc324844dbcd8ae629e4ec44de9545c&" alt="my_badges commands">
+
  - You can manager or remove badged with command
- <img src="https://cdn.discordapp.com/attachments/1198578773092745357/1209418170624901200/image.png?ex=65e6d971&is=65d46471&hm=d8be9a0ef89600b66046516b521db1a2d52bdd270bdc28438dc84b89f2a08551&" alt="my_badges commands">
+ <img src="https://cdn.discordapp.com/attachments/1198578773092745357/1209418170624901200/image.png?ex=65e6d971&is=65d46471&hm=d8be9a0ef89600b66046516b521db1a2d52bdd270bdc28438dc84b89f2a08551&" alt="bageds manager">
+ 
  - Used `/reload` to reload database and done.
 
 <!-- Empty line -->

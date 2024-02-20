@@ -50,7 +50,7 @@
  ### 1. Requirement
  - The version you are using is **Vencord DEV Build**. If you don't know how to install then you can [click here](https://github.com/Vendicated/Vencord/blob/main/docs/1_INSTALLING.md) to read the installation instructions.
 
- - Youtube video install Vencord DEV Build by [@daveyy1](https://discordappuser.com/users/549244932213309442): *Click image below to watch totorial*
+ - Youtube video install Vencord DEV Build by [@daveyy1](https://discord.com/users/549244932213309442): *Click image below to watch tutorial*
 
  [![Tutorial Install Third Party Plugin](https://img.youtube.com/vi/8wexjSo8fNw/maxresdefault.jpg)](https://www.youtube.com/watch?v=8wexjSo8fNw)
 

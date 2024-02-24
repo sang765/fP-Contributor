@@ -116,7 +116,7 @@ ___
 
  ### 4. How to request badge?
  - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
- - Used command `//badges add` like this:
+ - Used command `/badges add` like this:
  
  <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210892420741333103/image.png?ex=65ec3672&is=65d9c172&hm=f0f5f4e918ff1e4ce682a7fc0059ecf4b5f2d1d79b9806989748b33379744889&" alt="/badges add command">
 

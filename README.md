@@ -1,12 +1,11 @@
+<!-- HEAD PAGE -->
 <div align="center">
   <img src="https://cdn.discordapp.com/icons/1117373291095662623/cd7c44850a9a6e06b586abe05e035c7d.webp?size=1024&format=webp" alt="Server Discord Icon" width="100">
   <h1><strong>fakeProfile</strong></h1>
+  An <a href="https://vencord.dev/"><strong>all-in-one Vencord</strong></a> plugin to customize your Discord profile
 </div>
-<p align="center">
-    An <a href="https://vencord.dev/"><strong>all-in-one Vencord</strong></a> plugin to customize your Discord profile
-</p>
 
-
+<!-- MARKDOWN BADGED -->
 
 <p align="center">
   <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"></a>
@@ -14,20 +13,21 @@
   <a href="https://discord.gg/ffmkewQ4R7"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Server"></a>
 </p>
 <p align="center">
-<a href="https://vencord.dev"><img src="https://img.shields.io/badge/This%20plugin%20for-Vencord-pink?labelColor=gray&style=flat&logo=https://lh3.googleusercontent.com/zDATisIeInAwNSjH9LgItgvGXwq3M4SDdoIZzctMZ3Hbl9IhoFVJtsHvzQPz_a7K5xbdURropceVQK6XGrmg4v4HSQ=s60&link=https://vencord.dev" alt="This plugin for" /></a>
+<a href="https://vencord.dev"><img src="https://img.shields.io/badge/This%20plugin%20for-Vencord-pink?labelColor=gray&style=flat&logo=https://lh3.googleusercontent.com/zDATisIeInAwNSjH9LgItgvGXwq3M4SDdoIZzctMZ3Hbl9IhoFVJtsHvzQPz_a7K5xbdURropceVQK6XGrmg4v4HSQ=s60&link=https://vencord.dev" alt="Vencord Baged" /></a>
 </p>
 
-<!-- Empty line -->
+___
+
+<!-- BODY -->
 
 ## 🖥️Selection
 
- - [fakeProfile](#fakeProfile)
-   - [❓What is fakeProfile?](#❓what-is-fakeprofile?)
-   - [🔨Installation](#🔨installation)
-   - [❓Tutorial about plugin](#❓tutorial-about-plugin)
-   - [❔QnA](#❔qna)
+ - [fakeProfile](#fakeprofile)
+   - [❓What is fakeProfile?](#what-is-fakeprofile)
+   - [🔨Installation](#installation)
+   - [❓Tutorial about plugin](#tutorial-about-plugin)
+   - [❔QnA](#qna)
 
-<!-- Empty line -->
 
 
 ## ❓What is fakeProfile?
@@ -38,19 +38,19 @@
 **fakeProfile** is a plugin for **Vencord** that supports all features related to nitro profile editing `without` the need to use individual plugins to create a complete profile with features such as:
  - Custom banner (Animated)
  - Custom avatar (Animated)
+ - Choose custom badges
  - Choose profile effect (Without Nitro)
  - Choose profile theme colors (Without Nitro)
  - Choose custom decoration (Coming Soon...)
- - Choose custom badges
  - Reload database without restart client (This plugin used `/reload` to reload database)
 
-<!-- Empty line -->
+
 
 ## 🔨Installation
  ### 1. Requirement
  - The version you are using is **Vencord DEV Build**. If you don't know how to install then you can [click here](https://github.com/Vendicated/Vencord/blob/main/docs/1_INSTALLING.md) to read the installation instructions.
 
- - Youtube video install Vencord DEV Build by [@daveyy1](https://discord.com/users/549244932213309442): *Click image below to watch tutorial*
+- Youtube video install Vencord DEV Build by [@daveyy1](https://discordappuser.com/users/549244932213309442): *Click image below to watch tutorial*
 
  [![Tutorial Install Third Party Plugin](https://img.youtube.com/vi/8wexjSo8fNw/maxresdefault.jpg)](https://www.youtube.com/watch?v=8wexjSo8fNw)
 
@@ -81,64 +81,70 @@
  ```
  That all. Restart your Discord client and enjoy.
 
-<!-- Empty line -->
+
 
 ## ❓Tutorial about plugin
 > ✏️ **Note:** You must join our Discord server to request banners, avatars and badges. You can [click here](https://discord.gg/ffmkewQ4R7) and it will take you straight to our Discord server.
 
  ### 1. How to request banner?
- - Goto [#banner-request](https://discord.com/channels/1117373291095662623/1209033914769866833)
- - Upload a image have format `gif, png of jpg`.
-   
-   *⚠️ **Note:** You cannot use **image link** to request because it will not show your request in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1209032677366431815) channel.*
+ - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
+ - Used `/profile banner upload` command like image below:
+ 
+ <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210884226312966205/image.png?ex=65ec2ed0&is=65d9b9d0&hm=1e65108263618d2754e0c1843dffe6abd0c90798d92d9f23ce3acdef2dcf9dc8&" alt="profile banner upload">
 
  - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1209032677366431815) and use the `/reload` command to reload the database and enjoy.
 
  ### 2. How to request avatar?
- > **📄 Note:** The operation will be the same as requesting a banner but will only be different for each channel requested.
- - Goto [#avatar-request](https://discord.com/channels/1117373291095662623/1209035226018353152)
- - Upload a image have format `gif, png of jpg`.
-   
-   *⚠️ **Note:** You cannot use **image link** to request because it will not show your request in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1209032677366431815) channel.*
+ - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
+ - Used `/profile avatar upload` command like image below:
+
+ <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210885978445586452/image.png?ex=65ec3072&is=65d9bb72&hm=e2b9b7f554e35eb793ee67e07c4f0a0c31608d099a58dd3223fa40653879bfba&" alt="profile avatar upload">
 
  - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1209032677366431815) and use the `/reload` command to reload the database and enjoy.
  
  ### 3. How to choose a profile effect?
  - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
- - Used command `/effects` like this:
-  <img src="https://media.discordapp.net/attachments/998071689009184870/1209402089378422785/image.png?ex=65e6ca77&is=65d45577&hm=eddf86c225a7956b277fa9a1e596fcedcb42af670de49b16200c2f1459911013&=&format=webp&quality=lossless&width=1163&height=52" alt="effects commands">
-  
- - Choose a effect and click **apply** button
+ - Used command `/profile effects` like this:
+
+  <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210889022189346866/image.png?ex=65ec3348&is=65d9be48&hm=c84443ed081bf133df62ee21f7ab0537c50a2c0dd0205837280d06945df6fa42&" alt="profile effects">
+
+ - Choose a effect and click **`Apply`** button
+
+  <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210888342414303262/image.png?ex=65ec32a6&is=65d9bda6&hm=cfbbb49d58370e04ce4488b6baa1e3d24842d6113a100df1649c15d01d05ed05&" alt="profile effects preview">
+ 
  - After that used `/reload` to reload database and enjoy.
 
  ### 4. How to request badge?
  - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
- - Used command `/badge_add` like this:
- <img src="https://media.discordapp.net/attachments/998071689009184870/1209412234866855996/image.png?ex=65e6d3ea&is=65d45eea&hm=361f4aa531ad23ca63ff63220602702b769054ee3584eb335d3eb88bd3005d4b&=&format=webp&quality=lossless&width=1164&height=51" alt="badge_add commands">
+ - Used command `//badges add` like this:
+ 
+ <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210892420741333103/image.png?ex=65ec3672&is=65d9c172&hm=f0f5f4e918ff1e4ce682a7fc0059ecf4b5f2d1d79b9806989748b33379744889&" alt="/badges add command">
 
  - Wait your request approved in [#badge-log](https://discord.com/channels/1117373291095662623/1198555327730294844) and use `/reload` command to reload database and enjoy.
 
  ### 5. How to manager and remove my badges?
  - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
- - Used `/my_badges` like this image:
- <img src="https://cdn.discordapp.com/attachments/998071689009184870/1209419333219000371/image.png?ex=65e6da86&is=65d46586&hm=542f580c9d20c1048b8e7e0ed2b431a25cc324844dbcd8ae629e4ec44de9545c&" alt="my_badges commands">
+ - Used `/badges view` like this image:
+
+ <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210893128538791986/image.png?ex=65ec371b&is=65d9c21b&hm=f1bcc825b2027334ff28aac7ea0e874fff0b1227c420fbed0c85444304912da7&" alt="badges view commands">
 
  - You can manager or remove badged with command
- <img src="https://cdn.discordapp.com/attachments/1198578773092745357/1209418170624901200/image.png?ex=65e6d971&is=65d46471&hm=d8be9a0ef89600b66046516b521db1a2d52bdd270bdc28438dc84b89f2a08551&" alt="bageds manager">
+
+ <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210893128744308776/image.png?ex=65ec371b&is=65d9c21b&hm=9ba0a687fb29838530b01f3408b56b2c884cff17344afea760f212d5c7bba5c0&" alt="bageds manager">
 
  - Used `/reload` to reload database and done.
 
-<!-- Empty line -->
+
 
 ## ❔QnA
  ### 1. Can everyone in Discord see my profile?
- - No, only people who also use this plugin will see the changes.
+ - No, everyone in Discord will not see about your Profile change but in case if they also use the fakeProfile plugin then they will see your change.
  ### 2. If I leave the Discord server, will everything on my profile be lost?
- - No, because your requests will be saved in the plugin's database, so if you leave the server, nothing changes. *(unless you turn off the fakeProfile plugin, everything will return to the way it was when you didn't use this plugin)*
+ - No, because your requests will be saved in the plugin's database, so if you leave the server, everything will not be affected. *(unless you turn off the fakeProfile plugin, everything will return to the way it was when you didn't use this plugin)*
  ### 3. So what happens if I disable fakeProfile plugin?
  - As I answered in the 2nd QnA, everything will return to the way it was before you used this plugin. Of course, you can still turn it back on if you want to use it, but if you don't want to use it anymore, you have the right to turn this plugin off.
 
-<!-- Empty line -->
+<!-- END -->
 
 ---
 <p align="center" style="color: gray;">

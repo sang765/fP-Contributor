@@ -120,7 +120,7 @@ ___
  
  <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210892420741333103/image.png?ex=65ec3672&is=65d9c172&hm=f0f5f4e918ff1e4ce682a7fc0059ecf4b5f2d1d79b9806989748b33379744889&" alt="/badges add command">
 
- - Wait your request approved in [#badge-log](https://discord.com/channels/1117373291095662623/1198555327730294844) and use `/reload` command to reload database and enjoy.
+ - Wait your request approved in [#fakeProfile-log](https://discord.com/channels/1117373291095662623/1209032677366431815) and use `/reload` command to reload database and enjoy.
 
  ### 5. How to manager and remove my badges?
  - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)

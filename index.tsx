@@ -6,6 +6,7 @@
 
 import { addBadge, BadgePosition, ProfileBadge, removeBadge } from "@api/Badges";
 import { ApplicationCommandInputType, sendBotMessage } from "@api/Commands";
+import { addDecoration, removeDecoration } from "@api/MessageDecorations";
 import { definePluginSettings } from "@api/Settings";
 import { enableStyle } from "@api/Styles";
 import ErrorBoundary from "@components/ErrorBoundary";
@@ -14,7 +15,7 @@ import { Devs } from "@utils/constants";
 import { Margins } from "@utils/margins";
 import { copyWithToast } from "@utils/misc";
 import definePlugin, { OptionType } from "@utils/types";
-import { Button, Forms } from "@webpack/common";
+import { Button, Forms, Tooltip } from "@webpack/common";
 import { User } from "discord-types/general";
 import virtualMerge from "virtual-merge";
 
@@ -27,7 +28,6 @@ type Badge = {
     icon: string;
     link?: string;
 };
-
 interface UserProfile extends User {
     profileEffectId?: number;
 }
@@ -55,7 +55,6 @@ const addBadgesForAllUsers = () => {
                     UserBadges[userId] = [];
                 }
                 UserBadges[userId].push(newBadge);
-                console.log(UserBadges);
             });
         }
     });
@@ -152,8 +151,14 @@ const settings = definePluginSettings({
         default: false,
         restartNeeded: true
     },
+    showCustomBadgesinmessage: {
+        description: "Show custom badges in messages?",
+        type: OptionType.BOOLEAN,
+        default: false,
+        restartNeeded: true
+    },
     nitroFirst: {
-        description: "Banner to use if both Nitro and fakeProfile banners and avatar are present",
+        description: "Banner/Avatar to use if both Nitro and fakeProfile Banner/Avatar are present",
         type: OptionType.SELECT,
         options: [
             { label: "Nitro", value: true, default: true },
@@ -167,6 +172,60 @@ const settings = definePluginSettings({
         restartNeeded: true
     }
 });
+function ImageIcon(path: string) {
+    return ({ tooltip }: { tooltip: string; }) => (
+        <Tooltip text={tooltip} >
+            {(tooltipProps: any) => (
+                <img {...tooltipProps} src={path} height={20} width={20} />
+            )}
+        </Tooltip>
+    );
+}
+const BadgeIcon = ({ user, badgeImg, badgeText }: { user: User, badgeImg: string, badgeText: string; }) => {
+    if (UsersData[user.id]?.badges) {
+        const Icon = ImageIcon(badgeImg);
+        const tooltip = badgeText;
+        return <Icon tooltip={tooltip} />;
+    } else {
+        return null;
+    }
+};
+
+const BadgeMain = ({ user, wantMargin = true, wantTopMargin = false }: { user: User; wantMargin?: boolean; wantTopMargin?: boolean; }) => {
+
+    const validBadges = UsersData[user.id]?.badges;
+    if (!validBadges || validBadges.length === 0) return null;
+
+    const icons = validBadges.map((badge: Badge, index: number) => (
+        <BadgeIcon
+            key={index}
+            user={user}
+            badgeImg={badge.icon}
+            badgeText={badge.description}
+        />
+    ));
+
+    return (
+        <span
+            className="custom-badge"
+            style={{
+                display: "inline-flex",
+                justifyContent: "center",
+                alignItems: "center",
+                marginLeft: wantMargin ? 4 : 0,
+                verticalAlign: "top",
+                position: "relative",
+                top: wantTopMargin ? 2 : 0,
+                padding: !wantMargin ? 1 : 0,
+                gap: 2
+            }}
+        >
+            {icons}
+        </span>
+    );
+};
+
+
 
 export default definePlugin({
     name: "fakeProfile",
@@ -175,11 +234,24 @@ export default definePlugin({
         name: "Sampath",
         id: 984015688807100419n,
     }, Devs.Alyxia, Devs.Remty, Devs.AutumnVN, Devs.pylix, Devs.TheKodeToad],
+    dependencies: ["MessageDecorationsAPI"],
     async start() {
         enableStyle(style);
         await loadfakeProfile();
         if (settings.store.enableCustomBadges) {
             addBadgesForAllUsers();
+        }
+        if (settings.store.showCustomBadgesinmessage) {
+            addDecoration("custom-badge", props =>
+                <ErrorBoundary noop>
+                    <BadgeMain user={props.message?.author} wantTopMargin={true} />
+                </ErrorBoundary>
+            );
+        }
+    },
+    stop() {
+        if (settings.store.showCustomBadgesinmessage) {
+            removeDecoration("custom-badge");
         }
     },
     patches: [
@@ -266,6 +338,7 @@ export default definePlugin({
                     mergeData = {
                         ...mergeData,
                         profileEffectId: profileEffect
+
                     };
                 }
 
@@ -276,7 +349,7 @@ export default definePlugin({
                         themeColors: colors
                     };
                 }
-
+                console.log(user);
                 return virtualMerge(user, mergeData as UserProfile);
             }
             return user;
@@ -324,7 +397,7 @@ export default definePlugin({
                 removeBadgesForAllUsers();
                 await loadfakeProfile(true);
                 addBadgesForAllUsers();
-                sendBotMessage(ctx.channel.id, { content: "Reloaded fakeProfile" });
+                sendBotMessage(ctx.channel.id, { content: "Successfully reloaded fakeProfile plugin." });
             },
         },
     ],

@@ -1,6 +1,6 @@
 <!-- HEAD PAGE -->
 <div align="center">
-  <img src="https://cdn.discordapp.com/icons/1117373291095662623/503bfa2626afaff2965af90b22d6f9fcb24365601f162c5af2ded0c849b1eb1f.webp?size=1024" alt="Luminex" width="100">
+  <img src="https://cdn.discordapp.com/icons/1117373291095662623/65af90b22d6f9fcb24365601f162c5af.webp?size=1024" alt="Luminex" width="100">
   <h1><strong>fakeProfile</strong></h1>
   An <a href="https://vencord.dev/"><strong>all-in-one Vencord</strong></a> plugin to customize your Discord profile
 </div>

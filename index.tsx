@@ -152,7 +152,7 @@ const settings = definePluginSettings({
         restartNeeded: true
     },
     showCustomBadgesinmessage: {
-        description: "Show custom badges in messages?",
+        description: "Show custom badges in message",
         type: OptionType.BOOLEAN,
         default: false,
         restartNeeded: true
@@ -229,7 +229,7 @@ const BadgeMain = ({ user, wantMargin = true, wantTopMargin = false }: { user: U
 
 export default definePlugin({
     name: "fakeProfile",
-    description: "Use discord profile effects, themes without nitro and get custom badges.",
+    description: "Unlock Discord profile effects, themes, and custom badges without the need for Nitro.",
     authors: [{
         name: "Sampath",
         id: 984015688807100419n,
@@ -314,7 +314,7 @@ export default definePlugin({
 
         <Forms.FormSection>
             <Forms.FormTitle tag="h3">Usage</Forms.FormTitle>
-            <Link href="https://github.com/sampathgujarathi/fakeProfile/#how-to-get-profile-effects">CLICK HERE TO GET PROFILE EFFECTS, CUSTOM BADGES, BANNER OR ANIMATED PFP</Link>
+            <Link href="https://github.com/sampathgujarathi/fakeProfile">CLICK HERE TO GET PROFILE EFFECTS, CUSTOM BADGES, BANNER OR ANIMATED PFP</Link>
             <Forms.FormText>
                 Enable Profile Themes to use fake profile themes. <br />
                 To set your own colors:
@@ -397,7 +397,7 @@ export default definePlugin({
                 removeBadgesForAllUsers();
                 await loadfakeProfile(true);
                 addBadgesForAllUsers();
-                sendBotMessage(ctx.channel.id, { content: "Successfully reloaded fakeProfile plugin." });
+                sendBotMessage(ctx.channel.id, { content: "fakeProfile successfully reloaded." });
             },
         },
     ],

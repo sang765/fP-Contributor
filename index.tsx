@@ -29,9 +29,19 @@ type Badge = {
     link?: string;
 };
 interface UserProfile extends User {
-    profileEffectId?: number;
+    profileEffectId: string;
+    userId: string;
+
 }
-let UsersData = {} as Record<string, string>;
+interface UserProfileData {
+    profile_effect: string;
+    banner: string;
+    avatar: string;
+    badges: Badge[];
+}
+
+
+let UsersData = {} as Record<string, UserProfileData>;
 const UserBadges: Record<string, ProfileBadge[]> = {};
 const addBadgesForAllUsers = () => {
     Object.keys(UsersData).forEach(userId => {
@@ -230,10 +240,7 @@ const BadgeMain = ({ user, wantMargin = true, wantTopMargin = false }: { user: U
 export default definePlugin({
     name: "fakeProfile",
     description: "Unlock Discord profile effects, themes, and custom badges without the need for Nitro.",
-    authors: [{
-        name: "Sampath",
-        id: 984015688807100419n,
-    }, Devs.Alyxia, Devs.Remty, Devs.AutumnVN, Devs.pylix, Devs.TheKodeToad],
+    authors: [Devs.Sampath, Devs.Alyxia, Devs.Remty, Devs.AutumnVN, Devs.pylix, Devs.TheKodeToad],
     dependencies: ["MessageDecorationsAPI"],
     async start() {
         enableStyle(style);
@@ -349,7 +356,6 @@ export default definePlugin({
                         themeColors: colors
                     };
                 }
-                console.log(user);
                 return virtualMerge(user, mergeData as UserProfile);
             }
             return user;

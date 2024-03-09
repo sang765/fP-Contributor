@@ -79,6 +79,10 @@ ___
  ```shell
  pnpm build
  ```
+ - If you're not using vesktop then use this command to inject vencord:
+ ```shell
+ pnpm inject
+ ```
  That all. Restart your Discord client and enjoy.
 
 

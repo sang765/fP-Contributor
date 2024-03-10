@@ -20,7 +20,7 @@ import { Button, Forms, Toasts, Tooltip, useEffect, useState } from "@webpack/co
 import { User } from "discord-types/general";
 import virtualMerge from "virtual-merge";
 
-import { API_URL, BASE_URL, INVITE_KEY, SKU_ID } from "./constants";
+import { API_URL, BASE_URL, INVITE_KEY, SKU_ID, VERSION } from "./constants";
 const CustomizationSection = findByCodeLazy(".customizationSectionBackground");
 const cl = classNameFactory("vc-decoration-");
 
@@ -252,10 +252,7 @@ const BadgeMain = ({ user, wantMargin = true, wantTopMargin = false }: { user: U
 export default definePlugin({
     name: "fakeProfile",
     description: "Unlock Discord profile effects, themes, avatar decorations, and custom badges without the need for Nitro.",
-    authors: [{
-        name: "Sampath",
-        id: 984015688807100419n,
-    }, Devs.Alyxia, Devs.Remty, Devs.AutumnVN, Devs.pylix, Devs.TheKodeToad],
+    authors: [Devs.Sampath, Devs.Alyxia, Devs.Remty, Devs.AutumnVN, Devs.pylix, Devs.TheKodeToad],
     dependencies: ["MessageDecorationsAPI"],
     async start() {
         enableStyle(style);

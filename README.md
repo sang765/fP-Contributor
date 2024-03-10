@@ -42,7 +42,7 @@ ___
  - Choose profile effect (Without Nitro)
  - Choose profile theme colors (Without Nitro)
  - Choose custom decoration (Without Nitro)
- - Reload database without restart client (This plugin used reload button in profiles settings to reload database)
+ - Reload database without restart client (This plugin used `/reload` to reload database)
 
 
 
@@ -96,7 +96,7 @@ ___
 
  <img src="https://i.imgur.com/HYlTSEc.png" alt="profile banner upload">
 
- - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and use reload button in profiles.
+ - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and use the `/reload` command to reload the database and enjoy.
 
  ### 2. How to request avatar?
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
@@ -104,7 +104,7 @@ ___
 
  <img src="https://i.imgur.com/AivOIO7.png" alt="profile avatar upload">
 
- - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and use reload button in profiles.
+ - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and use the `/reload` command to reload the database and enjoy.
 
  ### 3. How to choose a profile effect?
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
@@ -116,7 +116,7 @@ ___
 
   <img src="https://i.imgur.com/xtx9tXi.png" alt="profile effects preview">
 
- - After that used reload button in profiles.
+ - After that used `/reload` to reload database and enjoy.
 
  ### 4. How to request badge?
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
@@ -124,7 +124,7 @@ ___
 
  <img src="https://i.imgur.com/hb2I5XC.png" alt="/badges add command">
 
- - Wait your request approved in [#fakeProfile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and use reload button in profiles.
+ - Wait your request approved in [#fakeProfile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and use `/reload` command to reload database and enjoy.
 
  ### 5. How to manager and remove my badges?
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
@@ -136,7 +136,7 @@ ___
 
  <img src="https://i.imgur.com/h2wi3Gn.png" alt="bageds manager">
 
- - After that used reload button in profiles.
+ - Used `/reload` to reload database and done.
 
  ### 6. How to choose a avatar decorations?
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
@@ -148,7 +148,7 @@ ___
 
   <img src="https://i.imgur.com/bXzsYId.png" alt="avatar decorations preview">
 
- - After that used reload button in profiles.
+ - After that used `/reload` to reload database and enjoy.
 
 
 ## ❔QnA

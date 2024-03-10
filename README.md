@@ -1,6 +1,6 @@
 <!-- HEAD PAGE -->
 <div align="center">
-  <img src="https://cdn.discordapp.com/icons/1117373291095662623/cd7c44850a9a6e06b586abe05e035c7d.webp?size=1024&format=webp" alt="Server Discord Icon" width="100">
+  <img src="https://cdn.discordapp.com/icons/1117373291095662623/65af90b22d6f9fcb24365601f162c5af.webp?size=1024" alt="Luminex" width="100">
   <h1><strong>fakeProfile</strong></h1>
   An <a href="https://vencord.dev/"><strong>all-in-one Vencord</strong></a> plugin to customize your Discord profile
 </div>
@@ -32,7 +32,7 @@ ___
 
 ## ❓What is fakeProfile?
 <div align="center">
-  <img src="https://cdn.discordapp.com/attachments/998071689009184870/1209377838571061298/bg.png?ex=65e6b3e1&is=65d43ee1&hm=d1e5af92057e9050ba3d2104b13315ee683931a43cd29aaa57695ae697ad41f2&" alt="Preview" width= "500">
+  <img src="https://i.imgur.com/dw2kD5y.png" alt="Preview" width= "500">
 </div>
 
 **fakeProfile** is a plugin for **Vencord** that supports all features related to nitro profile editing `without` the need to use individual plugins to create a complete profile with features such as:
@@ -41,8 +41,8 @@ ___
  - Choose custom badges
  - Choose profile effect (Without Nitro)
  - Choose profile theme colors (Without Nitro)
- - Choose custom decoration (Coming Soon...)
- - Reload database without restart client (This plugin used `/reload` to reload database)
+ - Choose custom decoration (Without Nitro)
+ - Reload database without restart client (This plugin used reload button in profiles settings to reload database)
 
 
 
@@ -79,6 +79,10 @@ ___
  ```shell
  pnpm build
  ```
+ - If you're not using vesktop then use this command to inject vencord:
+ ```shell
+ pnpm inject
+ ```
  That all. Restart your Discord client and enjoy.
 
 
@@ -87,53 +91,64 @@ ___
 > ✏️ **Note:** You must join our Discord server to request banners, avatars and badges. You can [click here](https://discord.gg/ffmkewQ4R7) and it will take you straight to our Discord server.
 
  ### 1. How to request banner?
- - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
+ - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/profile banner upload` command like image below:
- 
- <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210884226312966205/image.png?ex=65ec2ed0&is=65d9b9d0&hm=1e65108263618d2754e0c1843dffe6abd0c90798d92d9f23ce3acdef2dcf9dc8&" alt="profile banner upload">
 
- - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1209032677366431815) and use the `/reload` command to reload the database and enjoy.
+ <img src="https://i.imgur.com/HYlTSEc.png" alt="profile banner upload">
+
+ - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and use reload button in profiles.
 
  ### 2. How to request avatar?
- - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
+ - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/profile avatar upload` command like image below:
 
- <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210885978445586452/image.png?ex=65ec3072&is=65d9bb72&hm=e2b9b7f554e35eb793ee67e07c4f0a0c31608d099a58dd3223fa40653879bfba&" alt="profile avatar upload">
+ <img src="https://i.imgur.com/AivOIO7.png" alt="profile avatar upload">
 
- - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1209032677366431815) and use the `/reload` command to reload the database and enjoy.
- 
+ - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and use reload button in profiles.
+
  ### 3. How to choose a profile effect?
- - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
+ - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/profile effects` like this:
 
-  <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210889022189346866/image.png?ex=65ec3348&is=65d9be48&hm=c84443ed081bf133df62ee21f7ab0537c50a2c0dd0205837280d06945df6fa42&" alt="profile effects">
+  <img src="https://i.imgur.com/xtx9tXi.png" alt="profile effects">
 
  - Choose a effect and click **`Apply`** button
 
-  <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210888342414303262/image.png?ex=65ec32a6&is=65d9bda6&hm=cfbbb49d58370e04ce4488b6baa1e3d24842d6113a100df1649c15d01d05ed05&" alt="profile effects preview">
- 
- - After that used `/reload` to reload database and enjoy.
+  <img src="https://i.imgur.com/xtx9tXi.png" alt="profile effects preview">
+
+ - After that used reload button in profiles.
 
  ### 4. How to request badge?
- - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
+ - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/badges add` like this:
- 
- <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210892420741333103/image.png?ex=65ec3672&is=65d9c172&hm=f0f5f4e918ff1e4ce682a7fc0059ecf4b5f2d1d79b9806989748b33379744889&" alt="/badges add command">
 
- - Wait your request approved in [#fakeProfile-log](https://discord.com/channels/1117373291095662623/1209032677366431815) and use `/reload` command to reload database and enjoy.
+ <img src="https://i.imgur.com/hb2I5XC.png" alt="/badges add command">
+
+ - Wait your request approved in [#fakeProfile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and use reload button in profiles.
 
  ### 5. How to manager and remove my badges?
- - Goto [#vencord-commands](https://discord.com/channels/1117373291095662623/1185970757105360927)
+ - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/badges view` like this image:
 
- <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210893128538791986/image.png?ex=65ec371b&is=65d9c21b&hm=f1bcc825b2027334ff28aac7ea0e874fff0b1227c420fbed0c85444304912da7&" alt="badges view commands">
+ <img src="https://i.imgur.com/VCMSI4A.png" alt="badges view commands">
 
  - You can manager or remove badged with command
 
- <img src="https://cdn.discordapp.com/attachments/998071689009184870/1210893128744308776/image.png?ex=65ec371b&is=65d9c21b&hm=9ba0a687fb29838530b01f3408b56b2c884cff17344afea760f212d5c7bba5c0&" alt="bageds manager">
+ <img src="https://i.imgur.com/h2wi3Gn.png" alt="bageds manager">
 
- - Used `/reload` to reload database and done.
+ - After that used reload button in profiles.
 
+ ### 6. How to choose a avatar decorations?
+ - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Used command `/profile decorations` like this:
+
+  <img src="https://i.imgur.com/bXzsYId.png" alt="avatar decorations">
+
+ - Choose a effect and click **`Apply`** button
+
+  <img src="https://i.imgur.com/bXzsYId.png" alt="avatar decorations preview">
+
+ - After that used reload button in profiles.
 
 
 ## ❔QnA

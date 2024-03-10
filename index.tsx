@@ -5,21 +5,27 @@
  */
 
 import { addBadge, BadgePosition, ProfileBadge, removeBadge } from "@api/Badges";
-import { ApplicationCommandInputType, sendBotMessage } from "@api/Commands";
+import { addDecoration, removeDecoration } from "@api/MessageDecorations";
 import { definePluginSettings } from "@api/Settings";
-import { enableStyle } from "@api/Styles";
+import { classNameFactory, enableStyle } from "@api/Styles";
 import ErrorBoundary from "@components/ErrorBoundary";
+import { Flex } from "@components/Flex";
 import { Link } from "@components/Link";
 import { Devs } from "@utils/constants";
 import { Margins } from "@utils/margins";
 import { copyWithToast } from "@utils/misc";
 import definePlugin, { OptionType } from "@utils/types";
-import { Button, Forms } from "@webpack/common";
+import { findByCodeLazy, findByPropsLazy } from "@webpack";
+import { Button, Forms, Tooltip, useEffect, useState } from "@webpack/common";
 import { User } from "discord-types/general";
 import virtualMerge from "virtual-merge";
 
-import style from "./index.css?managed";
+const { isAnimatedAvatarDecoration } = findByPropsLazy("isAnimatedAvatarDecoration");
+const CustomizationSection = findByCodeLazy(".customizationSectionBackground");
+const cl = classNameFactory("vc-decoration-");
 
+import style from "./index.css?managed";
+const SKU_ID = "100101099222224";
 
 type Badge = {
     id: string;
@@ -27,11 +33,25 @@ type Badge = {
     icon: string;
     link?: string;
 };
-
-interface UserProfile extends User {
-    profileEffectId?: number;
+export interface AvatarDecoration {
+    asset: string;
+    skuId: string;
 }
-let UsersData = {} as Record<string, string>;
+interface UserProfile extends User {
+    profileEffectId: string;
+    userId: string;
+
+}
+interface UserProfileData {
+    profile_effect: string;
+    banner: string;
+    avatar: string;
+    badges: Badge[];
+    decoration: string;
+}
+
+
+let UsersData = {} as Record<string, UserProfileData>;
 const UserBadges: Record<string, ProfileBadge[]> = {};
 const addBadgesForAllUsers = () => {
     Object.keys(UsersData).forEach(userId => {
@@ -55,7 +75,6 @@ const addBadgesForAllUsers = () => {
                     UserBadges[userId] = [];
                 }
                 UserBadges[userId].push(newBadge);
-                console.log(UserBadges);
             });
         }
     });
@@ -152,8 +171,20 @@ const settings = definePluginSettings({
         default: false,
         restartNeeded: true
     },
+    enableAvatarDecorations: {
+        description: "Allows you to use discord avatar decorations",
+        type: OptionType.BOOLEAN,
+        default: false,
+        restartNeeded: true
+    },
+    showCustomBadgesinmessage: {
+        description: "Show custom badges in message",
+        type: OptionType.BOOLEAN,
+        default: false,
+        restartNeeded: true
+    },
     nitroFirst: {
-        description: "Banner to use if both Nitro and fakeProfile banners and avatar are present",
+        description: "Banner/Avatar to use if both Nitro and fakeProfile Banner/Avatar are present",
         type: OptionType.SELECT,
         options: [
             { label: "Nitro", value: true, default: true },
@@ -167,19 +198,85 @@ const settings = definePluginSettings({
         restartNeeded: true
     }
 });
+function ImageIcon(path: string) {
+    return ({ tooltip }: { tooltip: string; }) => (
+        <Tooltip text={tooltip} >
+            {(tooltipProps: any) => (
+                <img {...tooltipProps} src={path} height={20} width={20} />
+            )}
+        </Tooltip>
+    );
+}
+const BadgeIcon = ({ user, badgeImg, badgeText }: { user: User, badgeImg: string, badgeText: string; }) => {
+    if (UsersData[user.id]?.badges) {
+        const Icon = ImageIcon(badgeImg);
+        const tooltip = badgeText;
+        return <Icon tooltip={tooltip} />;
+    } else {
+        return null;
+    }
+};
+
+
+
+const BadgeMain = ({ user, wantMargin = true, wantTopMargin = false }: { user: User; wantMargin?: boolean; wantTopMargin?: boolean; }) => {
+
+    const validBadges = UsersData[user.id]?.badges;
+    if (!validBadges || validBadges.length === 0) return null;
+
+    const icons = validBadges.map((badge: Badge, index: number) => (
+        <BadgeIcon
+            key={index}
+            user={user}
+            badgeImg={badge.icon}
+            badgeText={badge.description}
+        />
+    ));
+
+    return (
+        <span
+            className="custom-badge"
+            style={{
+                display: "inline-flex",
+                justifyContent: "center",
+                alignItems: "center",
+                marginLeft: wantMargin ? 4 : 0,
+                verticalAlign: "top",
+                position: "relative",
+                top: wantTopMargin ? 2 : 0,
+                padding: !wantMargin ? 1 : 0,
+                gap: 2
+            }}
+        >
+            {icons}
+        </span>
+    );
+};
+
+
 
 export default definePlugin({
     name: "fakeProfile",
-    description: "Use discord profile effects, themes without nitro and get custom badges.",
-    authors: [{
-        name: "Sampath",
-        id: 984015688807100419n,
-    }, Devs.Alyxia, Devs.Remty, Devs.AutumnVN, Devs.pylix, Devs.TheKodeToad],
+    description: "Unlock Discord profile effects, themes, avatar decorations, and custom badges without the need for Nitro.",
+    authors: [Devs.Sampath, Devs.Alyxia, Devs.Remty, Devs.AutumnVN, Devs.pylix, Devs.TheKodeToad],
+    dependencies: ["MessageDecorationsAPI"],
     async start() {
         enableStyle(style);
         await loadfakeProfile();
         if (settings.store.enableCustomBadges) {
             addBadgesForAllUsers();
+        }
+        if (settings.store.showCustomBadgesinmessage) {
+            addDecoration("custom-badge", props =>
+                <ErrorBoundary noop>
+                    <BadgeMain user={props.message?.author} wantTopMargin={true} />
+                </ErrorBoundary>
+            );
+        }
+    },
+    stop() {
+        if (settings.store.showCustomBadgesinmessage) {
+            removeDecoration("custom-badge");
         }
     },
     patches: [
@@ -191,10 +288,24 @@ export default definePlugin({
             }
         },
         {
+            find: "getAvatarDecorationURL:",
+            replacement: {
+                match: /(?<=function \i\(\i\){)(?=let{avatarDecoration)/,
+                replace: "const vcDecoration = (() => { return $self.getAvatarDecorationURL(arguments[0]); })(); if (vcDecoration) return vcDecoration;"
+            }
+        },
+        {
             find: ".USER_SETTINGS_PROFILE_THEME_ACCENT",
             replacement: {
                 match: /RESET_PROFILE_THEME}\)(?<=color:(\i),.{0,500}?color:(\i),.{0,500}?)/,
                 replace: "$&,$self.addCopy3y3Button({primary:$1,accent:$2})"
+            }
+        },
+        {
+            find: "DefaultCustomizationSections",
+            replacement: {
+                match: /(?<={user:\i},"decoration"\),)/,
+                replace: "$self.DecorationSection(),"
             }
         },
         {
@@ -236,13 +347,44 @@ export default definePlugin({
                     replace: "$1$self.getAvatarHook($2)}"
                 }
             ]
+        },
+        {
+            find: "isAvatarDecorationAnimating:",
+            group: true,
+            replacement: [
+                // Add Decor avatar decoration hook to avatar decoration hook
+                {
+                    match: /(?<=TryItOut:\i,guildId:\i}\),)(?<=user:(\i).+?)/,
+                    replace: "vcAvatarDecoration=$self.useUserAvatarDecoration($1),"
+                },
+                // Use added hook
+                {
+                    match: /(?<={avatarDecoration:).{1,20}?(?=,)(?<=avatarDecorationOverride:(\i).+?)/,
+                    replace: "$1??vcAvatarDecoration??($&)"
+                },
+                // Make memo depend on added hook
+                {
+                    match: /(?<=size:\i}\),\[)/,
+                    replace: "vcAvatarDecoration,"
+                }
+            ]
+        },
+        {
+            find: "renderAvatarWithPopout(){",
+            replacement: [
+                // Use Decor avatar decoration hook
+                {
+                    match: /(?<=getAvatarDecorationURL\)\({avatarDecoration:)(\i).avatarDecoration(?=,)/,
+                    replace: "$self.useUserAvatarDecoration($1)??$&"
+                }
+            ]
         }
     ],
     settingsAboutComponent: () => (
 
         <Forms.FormSection>
             <Forms.FormTitle tag="h3">Usage</Forms.FormTitle>
-            <Link href="https://github.com/sampathgujarathi/fakeProfile/#how-to-get-profile-effects">CLICK HERE TO GET PROFILE EFFECTS, CUSTOM BADGES, BANNER OR ANIMATED PFP</Link>
+            <Link href="https://github.com/sampathgujarathi/fakeProfile">CLICK HERE TO GET PROFILE EFFECTS, CUSTOM BADGES, BANNER OR ANIMATED PFP</Link>
             <Forms.FormText>
                 Enable Profile Themes to use fake profile themes. <br />
                 To set your own colors:
@@ -266,6 +408,7 @@ export default definePlugin({
                     mergeData = {
                         ...mergeData,
                         profileEffectId: profileEffect
+
                     };
                 }
 
@@ -276,13 +419,37 @@ export default definePlugin({
                         themeColors: colors
                     };
                 }
-
                 return virtualMerge(user, mergeData as UserProfile);
             }
             return user;
         }
 
         return user;
+    },
+    SKU_ID,
+    useUserAvatarDecoration(user?: User): { asset: string; skuId: string; } | null {
+        const [avatarDecoration, setAvatarDecoration] = useState<string | null>(null);
+        useEffect(() => {
+            const fetchUserAssets = async () => {
+                try {
+                    if (user?.id) {
+                        const userAssetsData = UsersData[user.id];
+                        if (userAssetsData?.decoration) {
+                            setAvatarDecoration(userAssetsData.decoration);
+                        }
+                    }
+                } catch (error) {
+                    console.error("Error fetching user assets:", error);
+                }
+            };
+
+            fetchUserAssets();
+        }, [user, UsersData]);
+
+        if (!user || !settings.store.enableAvatarDecorations) {
+            return null;
+        }
+        return avatarDecoration ? { asset: avatarDecoration, skuId: SKU_ID } : null;
     },
     voiceBackgroundHook({ className, participantUserId }: any) {
         if (className.includes("tile_")) {
@@ -314,20 +481,37 @@ export default definePlugin({
 
         return UsersData[user.id]?.avatar ?? original(user, animated, size);
     },
-    commands: [
-        {
-            name: "reload",
-            description: "Reloads fakeProfile",
-            options: [],
-            inputType: ApplicationCommandInputType.BOT,
-            execute: async (opts, ctx) => {
-                removeBadgesForAllUsers();
-                await loadfakeProfile(true);
-                addBadgesForAllUsers();
-                sendBotMessage(ctx.channel.id, { content: "Reloaded fakeProfile" });
-            },
-        },
-    ],
+    getAvatarDecorationURL({ avatarDecoration, canAnimate }: { avatarDecoration: AvatarDecoration | null; canAnimate?: boolean; }) {
+        if (!avatarDecoration || !settings.store.enableAvatarDecorations) return;
+        if (avatarDecoration && canAnimate) {
+            const url = new URL(`https://cdn.discordapp.com/avatar-decoration-presets/${avatarDecoration?.asset}.png`);
+            return url.toString();
+        }
+        const url = new URL(`https://cdn.discordapp.com/avatar-decoration-presets/${avatarDecoration?.asset}.png?passthrough=false`);
+        return url.toString();
+    },
+    DecorationSection() {
+        if (!settings.store.enableAvatarDecorations) return;
+        return <CustomizationSection
+            title={"fakeProfile"}
+            hasBackground={true}
+            hideDivider={false}
+            className={cl("section-remove-margin")}
+        >
+            <Flex>
+                <Button
+                    onClick={async () => {
+                        removeBadgesForAllUsers();
+                        await loadfakeProfile(true);
+                        addBadgesForAllUsers();
+                    }}
+                    size={Button.Sizes.SMALL}
+                >
+                    Reload fakeProfile
+                </Button>
+            </Flex>
+        </CustomizationSection>;
+    },
     addCopy3y3Button: ErrorBoundary.wrap(function ({ primary, accent }: Colors) {
         return <Button
             onClick={() => {

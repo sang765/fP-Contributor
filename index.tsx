@@ -252,7 +252,10 @@ const BadgeMain = ({ user, wantMargin = true, wantTopMargin = false }: { user: U
 export default definePlugin({
     name: "fakeProfile",
     description: "Unlock Discord profile effects, themes, avatar decorations, and custom badges without the need for Nitro.",
-    authors: [Devs.Sampath, Devs.Alyxia, Devs.Remty, Devs.AutumnVN, Devs.pylix, Devs.TheKodeToad],
+    authors: [{
+        name: "Sampath",
+        id: 984015688807100419n,
+    }, Devs.Alyxia, Devs.Remty, Devs.AutumnVN, Devs.pylix, Devs.TheKodeToad],
     dependencies: ["MessageDecorationsAPI"],
     async start() {
         enableStyle(style);

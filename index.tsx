@@ -65,6 +65,7 @@ const updateBadgesForAllUsers = () => {
                     const newBadge = {
                         image: badge.icon,
                         position: BadgePosition.START,
+                        description: badge.description,
                         props: {
                             style: {
                                 borderRadius: "50%",
@@ -259,8 +260,8 @@ export default definePlugin({
     description: "Unlock Discord profile effects, themes, avatar decorations, and custom badges without the need for Nitro.",
     authors: [{
         name: "Sampath",
-        id: 984015688807100419n,
-    }, Devs.Alyxia, Devs.Remty, Devs.AutumnVN, Devs.pylix, Devs.TheKodeToad],
+        id: 984015688807100419n}
+        , Devs.Alyxia, Devs.Remty, Devs.AutumnVN, Devs.pylix, Devs.TheKodeToad],
     dependencies: ["MessageDecorationsAPI"],
     async start() {
         enableStyle(style);

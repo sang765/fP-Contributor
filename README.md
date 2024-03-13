@@ -42,7 +42,7 @@ ___
  - Choose profile effect (Without Nitro)
  - Choose profile theme colors (Without Nitro)
  - Choose custom decoration (Without Nitro)
- - Reload database without restart client (This plugin used `/reload` to reload database)
+ - Reload database without restart client (You can use reload button in profile section or it will automatically reload after 5 mins)
 
 
 

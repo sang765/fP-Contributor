@@ -243,6 +243,37 @@ const settings = definePluginSettings({
     }
 });
 
+interface fakeProfileSectionProps {
+    hideTitle?: boolean;
+    hideDivider?: boolean;
+    noMargin?: boolean;
+}
+function fakeProfileSection({ hideTitle = false, hideDivider = false, noMargin = false }: fakeProfileSectionProps) {
+    return <CustomizationSection
+        title={!hideTitle && "fakeProfile"}
+        hasBackground={true}
+        hideDivider={hideDivider}
+        className={noMargin && cl("section-remove-margin")}
+    >
+        <Flex>
+            <Button
+                onClick={async () => {
+                    await loadfakeProfile(true);
+                    updateBadgesForAllUsers();
+                    Toasts.show({
+                        message: "Updated fakeProfile!",
+                        id: Toasts.genId(),
+                        type: Toasts.Type.SUCCESS
+                    });
+                }}
+                size={Button.Sizes.SMALL}
+            >
+                Reload fakeProfile
+            </Button>
+        </Flex>
+    </CustomizationSection>;
+}
+
 const openModalOnClick = () => {
     const modalKey = openModal(props => (
         <ErrorBoundary noop onError={() => {
@@ -346,9 +377,7 @@ const BadgeMain = ({ user, wantMargin = true, wantTopMargin = false }: { user: U
 export default definePlugin({
     name: "fakeProfile",
     description: "Unlock Discord profile effects, themes, avatar decorations, and custom badges without the need for Nitro.",
-    authors: [{
-        name: "Sampath",
-        id: 984015688807100419n}, Devs.Alyxia, Devs.Remty, Devs.AutumnVN, Devs.pylix, Devs.TheKodeToad],
+    authors: [Devs.Sampath, Devs.Alyxia, Devs.Remty, Devs.AutumnVN, Devs.pylix, Devs.TheKodeToad],
     dependencies: ["MessageDecorationsAPI"],
     async start() {
         enableStyle(style);
@@ -412,7 +441,7 @@ export default definePlugin({
         {
             find: "DefaultCustomizationSections",
             replacement: {
-                match: /(?<={user:\i},"decoration"\),)/,
+                match: /(?<=USER_SETTINGS_AVATAR_DECORATION},"decoration"\),)/,
                 replace: "$self.fakeProfileSection(),"
             }
         },
@@ -594,32 +623,7 @@ export default definePlugin({
         const url = new URL(`https://cdn.discordapp.com/avatar-decoration-presets/${avatarDecoration?.asset}.png?passthrough=false`);
         return url.toString();
     },
-    fakeProfileSection() {
-        if (!settings.store.enableAvatarDecorations) return;
-        return <CustomizationSection
-            title={"fakeProfile"}
-            hasBackground={true}
-            hideDivider={false}
-            className={cl("section-remove-margin")}
-        >
-            <Flex>
-                <Button
-                    onClick={async () => {
-                        await loadfakeProfile(true);
-                        updateBadgesForAllUsers();
-                        Toasts.show({
-                            message: "Updated fakeProfile!",
-                            id: Toasts.genId(),
-                            type: Toasts.Type.SUCCESS
-                        });
-                    }}
-                    size={Button.Sizes.SMALL}
-                >
-                    Reload fakeProfile
-                </Button>
-            </Flex>
-        </CustomizationSection>;
-    },
+    fakeProfileSection: ErrorBoundary.wrap(fakeProfileSection),
     addCopy3y3Button: ErrorBoundary.wrap(function ({ primary, accent }: Colors) {
         return <Button
             onClick={() => {

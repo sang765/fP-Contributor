@@ -621,15 +621,15 @@ export default definePlugin({
     getAvatarDecorationURL({ avatarDecoration, canAnimate }: { avatarDecoration: AvatarDecoration | null; canAnimate?: boolean; }) {
         if (!avatarDecoration || !settings.store.enableAvatarDecorations) return;
         if (avatarDecoration && canAnimate) {
-            if (avatarDecoration?.skuId === SKU_ID_DISCORD) {
+            if (avatarDecoration?.skuId === SKU_ID_DISCORD || avatarDecoration?.skuId !== SKU_ID_DISCORD && avatarDecoration?.skuId !== SKU_ID) {
                 const url = new URL(`https://cdn.discordapp.com/avatar-decoration-presets/${avatarDecoration?.asset}.png`);
                 return url.toString();
             } else {
                 const url = new URL(`https://i.sampath.tech/avatar-decoration-presets/a_${avatarDecoration?.asset}.png`);
                 return url.toString();
             }
-        } else {
-            if (avatarDecoration?.skuId === SKU_ID_DISCORD) {
+        } else if (avatarDecoration && !canAnimate) {
+            if (avatarDecoration?.skuId === SKU_ID_DISCORD || avatarDecoration?.skuId !== SKU_ID_DISCORD && avatarDecoration?.skuId !== SKU_ID) {
                 const url = new URL(`https://cdn.discordapp.com/avatar-decoration-presets/${avatarDecoration?.asset}.png?passthrough=false`);
                 return url.toString();
             } else {

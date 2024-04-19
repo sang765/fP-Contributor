@@ -43,10 +43,10 @@ ___
 - Choose profile effect (Without Nitro)
 - Choose profile theme colors (Without Nitro)
 - Choose custom decoration (Without Nitro)
-- Reload database without restart client (Automatically refresh the plugin every *2 minutes* or manually refresh in **Profile Settings** and refresh in **VencordToolbox** `"If the plugin is enable"`)
+- Reload database without restart client (Automatically refresh the plugin every *2 minutes* or manually refresh using button in **Profile Settings** or in **VencordToolbox** (`If the plugin is enable`)
 
 ## 😍 Compare plugins
-| Features                                                                                          | [fakeProfile](https://github.com/sampathgujarathi/fakeProfile) | [USRBG](hhttps://github.com/Discord-Custom-Covers/usrbg) | [UserPFP](https://github.com/UserPFP/UserPFP) | [GlobalBadges](https://github.com/WolfPlugs/GlobalBadges) |
+| Features                                                                                          | fakeProfile | USRBG | UserPFP | GlobalBadges |
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | Custom Banner                                                                              | ✔                                                       | ✔                                                                                      | ❌                                                                                          | ❌                                                                                       | 
 | Custom Avatar                                                                           | ✔                                                       |                                        ❌                                               | ✔                                                                                           | ❌                                                                                       | 
@@ -54,7 +54,6 @@ ___
 | Custom Profile Effect                                                                         | ✔                                             | ❌                                                                                      | ❌                                                                                           | ❌                                                                                       | 
 | Choose And Custom Decoration                                                                                     | ✔                                                       | ❌                                                                                      | ❌                                                                                           | ❌                                                                                       | 
 | Custom Badge                                                                              | ✔                                                       | ❌                                                                                      | ❌                                                                                           | ✔                                                                                       | 
-| Custom User Bot Tag                                                                        | Working In Process                                                       | ❌                                                                                      | ❌                                                                                           | ❌                                                                                       | 
 
 ## 🔨Installation
  ### 1. Requirement
@@ -104,7 +103,7 @@ ___
 ## ❓Tutorial about plugin
 > ✏️ **Note:** You must join our Discord server to request banners, avatars and badges. You can [click here](https://discord.gg/ffmkewQ4R7) and it will take you straight to our Discord server.
 
- ### 1. How to request banner?
+### 1. How to request banner?
 <details closed>
 <summary>Click to read</summary>
 <br>
@@ -118,10 +117,11 @@ ___
 
 </details>
 
- ### 2. How to request avatar?
- <details closed>
+### 2. How to request avatar?
+<details closed>
 <summary>Click to read</summary>
 <br>
+
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/profile avatar upload` command like image below:
 
@@ -130,10 +130,11 @@ ___
  - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and wait 2 mins or reload manually is done.
 </details>
 
- ### 3. How to choose a profile effect?
+### 3. How to choose a profile effect?
 <details closed>
 <summary>Click to read</summary>
 <br>
+
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/profile effects` like this:
 
@@ -146,10 +147,11 @@ ___
  - After that wait 2 mins or reload manually is done.
 </details>
 
- ### 4. How to request badge?
+### 4. How to request badge?
 <details closed>
 <summary>Click to read</summary>
 <br>
+
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/badges add` like this:
 
@@ -158,10 +160,11 @@ ___
  - Wait your request approved in [#fakeProfile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and wait 2 mins or reload manually is done.
 </details>
 
- ### 5. How to manager and remove my badges?
+### 5. How to manager and remove my badges?
 <details closed>
 <summary>Click to read</summary>
 <br>
+
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/badges view` like this image:
 
@@ -174,10 +177,11 @@ ___
  - Wait 2 mins or reload manually and done.
 </details>
 
- ### 6. How to choose a avatar decorations?
+### 6. How to choose a avatar decorations?
 <details closed>
 <summary>Click to read</summary>
 <br>
+
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/profile decorations` like this:
 

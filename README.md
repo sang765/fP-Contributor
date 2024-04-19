@@ -1,6 +1,6 @@
 <!-- HEAD PAGE -->
 <div align="center">
-  <img src="https://cdn.discordapp.com/icons/1117373291095662623/88d84a382ce77b66666dedac83840866?size=1024" alt="Lumi Community" width="100">
+  <img src="assets/banner.png" alt="Banner Project" width="500">
   <h1><strong>fakeProfile</strong></h1>
   An <a href="https://vencord.dev/"><strong>all-in-one Vencord</strong></a> plugin to customize your Discord profile
 </div>
@@ -33,7 +33,7 @@ ___
 
 ## ❓What is fakeProfile?
 <div align="center">
-  <img src="https://i.imgur.com/dw2kD5y.png" alt="Preview" width= "500">
+  <img src="assets/profilepreview.png" alt="Preview" width= "500">
 </div>
 
 **fakeProfile** is a plugin for **Vencord** that supports all features related to nitro profile editing `without` the need to use individual plugins to create a complete profile with features such as:
@@ -64,7 +64,7 @@ ___
 
 - Youtube video install Vencord DEV Build by [@daveyy1](https://discordappuser.com/users/549244932213309442): *Click image below to watch tutorial*
 
- [![Tutorial Install Third Party Plugin](https://img.youtube.com/vi/8wexjSo8fNw/maxresdefault.jpg)](https://www.youtube.com/watch?v=8wexjSo8fNw)
+ [![Tutorial Install Third Party Plugin](assets/videotutorial.png)](https://www.youtube.com/watch?v=8wexjSo8fNw)
 </details>
 
  ### 2. Install Plugin
@@ -111,7 +111,7 @@ ___
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/profile banner upload` command like image below:
 
- <img src="https://i.imgur.com/HYlTSEc.png" alt="profile banner upload">
+ <img src="assets/bannertutorial1.png" alt="profile banner upload">
 
  - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and wait 2 mins or reload manually is done.
 
@@ -125,7 +125,7 @@ ___
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/profile avatar upload` command like image below:
 
- <img src="https://i.imgur.com/AivOIO7.png" alt="profile avatar upload">
+ <img src="assets/avatartutorial1.png" alt="profile avatar upload">
 
  - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and wait 2 mins or reload manually is done.
 </details>
@@ -138,11 +138,11 @@ ___
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/profile effects` like this:
 
-  <img src="https://i.imgur.com/xtx9tXi.png" alt="profile effects">
+  <img src="assets/profileeffect1.png" alt="profile effects">
 
  - Choose a effect and click **`Apply`** button
 
-  <img src="https://i.imgur.com/xtx9tXi.png" alt="profile effects preview">
+  <img src="assets/profileeffect2.png" alt="profile effects preview">
 
  - After that wait 2 mins or reload manually is done.
 </details>
@@ -155,7 +155,7 @@ ___
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/badges add` like this:
 
- <img src="https://i.imgur.com/hb2I5XC.png" alt="/badges add command">
+ <img src="assets/badgeaddcommand.png" alt="/badges add command">
 
  - Wait your request approved in [#fakeProfile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and wait 2 mins or reload manually is done.
 </details>
@@ -168,11 +168,11 @@ ___
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/badges view` like this image:
 
- <img src="https://i.imgur.com/VCMSI4A.png" alt="badges view commands">
+ <img src="assets/badgeviewcommand.png" alt="badges view commands">
 
  - You can manager or remove badged with command
 
- <img src="https://i.imgur.com/h2wi3Gn.png" alt="bageds manager">
+ <img src="assets/badgeviewmenu.png" alt="bageds manager">
 
  - Wait 2 mins or reload manually and done.
 </details>
@@ -185,11 +185,11 @@ ___
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/profile decorations` like this:
 
-  <img src="https://i.imgur.com/bXzsYId.png" alt="avatar decorations">
+  <img src="assets/profiledecorationscommand.png" alt="avatar decorations">
 
  - Choose a effect and click **`Apply`** button
 
-  <img src="https://i.imgur.com/bXzsYId.png" alt="avatar decorations preview">
+  <img src="assets/profiledecorationsmenu.png" alt="avatar decorations preview">
 
  - After that wait 2 mins or reload manually is done.
 </details>
@@ -212,6 +212,8 @@ ___
 <!-- END -->
 
 ---
-<p align="center" style="color: gray;">
-  @2023-2024 fakeProfile
-</p>
+<br>
+<div align="center">
+  <img src="assets/lumilogo.png" alt="Banner Project" width="70">
+  <h6>@2023-2024 fakeProfile</h6>
+</div>

@@ -1,6 +1,6 @@
 <!-- HEAD PAGE -->
 <div align="center">
-  <img src="assets/banner.png" alt="Banner Project">
+  <img src="assets/banner.png" alt="Banner Project" width="550">
   <h1><strong>fakeProfile</strong></h1>
   An <a href="https://vencord.dev/"><strong>all-in-one Vencord</strong></a> plugin to customize your Discord profile
 </div>
@@ -209,11 +209,17 @@ ___
  - As I answered in the 2nd QnA, everything will return to the way it was before you used this plugin. Of course, you can still turn it back on if you want to use it, but if you don't want to use it anymore, you have the right to turn this plugin off.
 </details>
 
+## 🖋️ Credits
+### ✨ Author
+- **[sampath](https://github.com/sampathgujarathi)**
+### 👍 Contributions
+- **[sang765](https://github.com/sang765)**
+- **[Kingscur](https://github.com/Kingscur)**
 <!-- END -->
 
 ---
 <br>
 <div align="center">
   <img src="assets/lumilogo.png" alt="Banner Project" width="70">
-  <h6>@2023-2024 fakeProfile</h6>
+  <h6>@2023-2024 Lumi Comunity</h6>
 </div>

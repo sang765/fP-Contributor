@@ -1,4 +1,3 @@
-![image](https://github.com/sampathgujarathi/fakeProfile/assets/66912066/a04a2164-ba9b-47cd-bbb7-b41b1524cb38)<!-- HEAD PAGE -->
 <div align="center">
   <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/6e4d4059-13aa-40a4-abb1-31543322f64a" alt="Banner Project" width="550">
 

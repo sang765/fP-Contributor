@@ -1,6 +1,7 @@
-<!-- HEAD PAGE -->
+![image](https://github.com/sampathgujarathi/fakeProfile/assets/66912066/a04a2164-ba9b-47cd-bbb7-b41b1524cb38)<!-- HEAD PAGE -->
 <div align="center">
-  <img src="assets/banner.png" alt="Banner Project" width="550">
+  <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/6e4d4059-13aa-40a4-abb1-31543322f64a" alt="Banner Project" width="550">
+
   <h1><strong>fakeProfile</strong></h1>
   An <a href="https://vencord.dev/"><strong>all-in-one Vencord</strong></a> plugin to customize your Discord profile
 </div>
@@ -13,7 +14,8 @@
   <a href="https://discord.gg/ffmkewQ4R7"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Server"></a>
 </p>
 <p align="center">
-<a href="https://vencord.dev"><img src="assets/VencordBadge.png" alt="Vencord Badged"/></a>
+<a href="https://vencord.dev"><img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/d9a0c6ba-95c5-48bb-9600-5af16f93e39e" alt="Vencord Badge"/></a>
+
 </p>
 
 ___
@@ -111,7 +113,7 @@ ___
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/profile banner upload` command like image below:
 
- <img src="assets/bannertutorial1.png" alt="profile banner upload">
+ <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/b1ea7d83-b074-4778-a764-fc69f8beff9a" alt="profile banner upload">
 
  - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and wait 2 mins or reload manually is done.
 
@@ -125,7 +127,7 @@ ___
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/profile avatar upload` command like image below:
 
- <img src="assets/avatartutorial1.png" alt="profile avatar upload">
+ <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/cd39bd4c-7226-496e-b08e-1c1cd8f12e81" alt="profile avatar upload">
 
  - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and wait 2 mins or reload manually is done.
 </details>
@@ -138,11 +140,12 @@ ___
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/profile effects` like this:
 
-  <img src="assets/profileeffect1.png" alt="profile effects">
+  <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/d73f43b3-f456-40d6-a4c1-09d55af95e68" alt="profile effects">
 
  - Choose a effect and click **`Apply`** button
 
-  <img src="assets/profileeffect2.png" alt="profile effects preview">
+  <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/963279fd-2247-40eb-a564-278e3761bf28" alt="profile effects preview">
+
 
  - After that wait 2 mins or reload manually is done.
 </details>
@@ -155,7 +158,7 @@ ___
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/badges add` like this:
 
- <img src="assets/badgeaddcommand.png" alt="/badges add command">
+ <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/ef0191f7-6e78-4f63-ab9a-4dbdd24a27a2" alt="/badges add command">
 
  - Wait your request approved in [#fakeProfile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and wait 2 mins or reload manually is done.
 </details>
@@ -168,11 +171,11 @@ ___
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/badges view` like this image:
 
- <img src="assets/badgeviewcommand.png" alt="badges view commands">
+ <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/37361a8a-b939-4a62-b6eb-f0476812b9ab" alt="badges view commands">
 
  - You can manager or remove badged with command
 
- <img src="assets/badgeviewmenu.png" alt="bageds manager">
+ <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/4fa579ec-e3ef-4cbc-aaee-6398eb6d249f" alt="bageds manager">
 
  - Wait 2 mins or reload manually and done.
 </details>
@@ -185,11 +188,11 @@ ___
  - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/profile decorations` like this:
 
-  <img src="assets/profiledecorationscommand.png" alt="avatar decorations">
+  <img src="(https://github.com/sampathgujarathi/fakeProfile/assets/66912066/9ed0a1bc-d7d8-402d-97e3-f2dba7a22b0d" alt="avatar decorations">
 
  - Choose a effect and click **`Apply`** button
 
-  <img src="assets/profiledecorationsmenu.png" alt="avatar decorations preview">
+  <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/69c9957c-9169-404e-b89d-8d1f08819777" alt="avatar decorations preview">
 
  - After that wait 2 mins or reload manually is done.
 </details>
@@ -216,6 +219,6 @@ ___
 ---
 <br>
 <div align="center">
-  <img src="assets/lumilogo.png" alt="Banner Project" width="70">
+  <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/28ed5fe9-94d6-4ab2-b6c4-3d63f56f2d6c" alt="Banner Project" width="70">
   <h6>@2023-2024 Lumi Comunity</h6>
 </div>

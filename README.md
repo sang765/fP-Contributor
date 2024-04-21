@@ -13,7 +13,7 @@
   <a href="https://discord.gg/ffmkewQ4R7"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Server"></a>
 </p>
 <p align="center">
-<a href="https://vencord.dev"><img src="assets/VencordBadge.png" alt="Vencord Baged"/></a>
+<a href="https://vencord.dev"><img src="assets/VencordBadge.png" alt="Vencord Badged"/></a>
 </p>
 
 ___
@@ -209,12 +209,8 @@ ___
  - As I answered in the 2nd QnA, everything will return to the way it was before you used this plugin. Of course, you can still turn it back on if you want to use it, but if you don't want to use it anymore, you have the right to turn this plugin off.
 </details>
 
-## 🖋️ Credits
-### ✨ Author
-- **[sampath](https://github.com/sampathgujarathi)**
-### 👍 Contributions
-- **[sang765](https://github.com/sang765)**
-- **[Kingscur](https://github.com/Kingscur)**
+## 👍 Contributors
+![Contributors](https://contrib.rocks/image?repo=sampathgujarathi/fakeProfile)
 <!-- END -->
 
 ---

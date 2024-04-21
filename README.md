@@ -33,7 +33,7 @@ ___
 
 ## ❓What is fakeProfile?
 <div align="center">
-  <img src="assets/profilepreview.png" alt="Preview" width= "500">
+  <img src="assets/profilepreview.png" alt="Preview" width="500">
 </div>
 
 **fakeProfile** is a plugin for **Vencord** that supports all features related to nitro profile editing `without` the need to use individual plugins to create a complete profile with features such as:

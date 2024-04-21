@@ -103,6 +103,8 @@ ___
 ## ❓Tutorial about plugin
 > ✏️ **Note:** You must join our Discord server to request banners, avatars and badges. You can [click here](https://discord.gg/ffmkewQ4R7) and it will take you straight to our Discord server.
 
+<iframe src="https://discord.com/widget?id=1117373291095662623&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
 ### 1. How to request banner?
 <details closed>
 <summary>Click to read</summary>

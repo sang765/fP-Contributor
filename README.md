@@ -1,6 +1,6 @@
 <!-- HEAD PAGE -->
 <div align="center">
-  <img src="assets/banner.png" alt="Banner Project" width="500">
+  <img src="assets/banner.png" alt="Banner Project">
   <h1><strong>fakeProfile</strong></h1>
   An <a href="https://vencord.dev/"><strong>all-in-one Vencord</strong></a> plugin to customize your Discord profile
 </div>
@@ -13,7 +13,7 @@
   <a href="https://discord.gg/ffmkewQ4R7"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Server"></a>
 </p>
 <p align="center">
-<a href="https://vencord.dev"><img src="https://img.shields.io/badge/This%20plugin%20for-Vencord-pink?labelColor=gray&style=flat&logo=https://lh3.googleusercontent.com/zDATisIeInAwNSjH9LgItgvGXwq3M4SDdoIZzctMZ3Hbl9IhoFVJtsHvzQPz_a7K5xbdURropceVQK6XGrmg4v4HSQ=s60&link=https://vencord.dev" alt="Vencord Baged" /></a>
+<a href="https://vencord.dev"><img src="assets/VencordBadge.png" alt="Vencord Baged"/></a>
 </p>
 
 ___

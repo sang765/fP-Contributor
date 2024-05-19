@@ -25,7 +25,7 @@ ___
 
  - [fakeProfile](#fakeprofile)
    - [❓What is fakeProfile?](#what-is-fakeprofile)
-   - [😍 Compare plugins](#Compare-plugins)
+   - [😍Compare plugins](#compare-plugins)
    - [🔨Installation](#installation)
    - [❓Tutorial about plugin](#tutorial-about-plugin)
    - [❔QnA](#qna)

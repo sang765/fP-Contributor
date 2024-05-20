@@ -6,7 +6,7 @@
 </div>
 
 <!-- MARKDOWN BADGED -->
-
+<br>
 <p align="center">
   <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"></a>
   <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="CSS"></a>
@@ -25,7 +25,7 @@ ___
 
  - [fakeProfile](#fakeprofile)
    - [❓What is fakeProfile?](#what-is-fakeprofile)
-   - [😍 Compare plugins](#compare-plugins)
+   - [😍Compare plugins](#compare-plugins)
    - [🔨Installation](#installation)
    - [❓Tutorial about plugin](#tutorial-about-plugin)
    - [❔QnA](#qna)
@@ -34,7 +34,7 @@ ___
 
 ## ❓What is fakeProfile?
 <div align="center">
-  <img src="assets/profilepreview.png" alt="Preview" width="500">
+  <img src="https://github.com/sampathgujarathi/fakeProfile/blob/137947f167b631f6fdbd2ff07ba26e48016c5658/assets/profilepreview.png" alt="Preview" width="500">
 </div>
 
 **fakeProfile** is a plugin for **Vencord** that supports all features related to nitro profile editing `without` the need to use individual plugins to create a complete profile with features such as:

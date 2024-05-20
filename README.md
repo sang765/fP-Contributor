@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/6e4d4059-13aa-40a4-abb1-31543322f64a" alt="Banner Project" width="550">
 
-  <h1><strong>fakeProfile</strong></h1>
+  <h1><img src="https://i.imgur.com/iDlsg7L.png" alt="Lumi Logo" width="25"><strong>・fakeProfile</strong></h1>
   An <a href="https://vencord.dev/"><strong>all-in-one Vencord</strong></a> plugin to customize your Discord profile
 </div>
 
@@ -34,27 +34,29 @@ ___
 
 ## ❓What is fakeProfile?
 <div align="center">
-  <img src="https://github.com/sampathgujarathi/fakeProfile/blob/137947f167b631f6fdbd2ff07ba26e48016c5658/assets/profilepreview.png" alt="Preview" width="500">
+  <img src="https://github.com/sampathgujarathi/fakeProfile/blob/137947f167b631f6fdbd2ff07ba26e48016c5658/assets/profilepreview.png?raw=true" alt="Preview" width="500">
 </div>
 
 **fakeProfile** is a plugin for **Vencord** that supports all features related to nitro profile editing `without` the need to use individual plugins to create a complete profile with features such as:
-- Custom banner (Animated)
-- Custom avatar (Animated)
-- Choose custom badges
-- Choose profile effect (Without Nitro)
-- Choose profile theme colors (Without Nitro)
-- Choose custom decoration (Without Nitro)
-- Reload database without restart client (Automatically refresh the plugin every *2 minutes* or manually refresh using button in **Profile Settings** or in **VencordToolbox** (`If the plugin is enable`)
+- ✅ Custom banner (Animated Support)
+- ✅ Custom avatar (Animated Support)
+- ✅ Choose and custom badges (Allow choose default Discord badges)
+- ✅ Choose profile effect (Without Nitro)
+- ✅ Choose profile theme colors (Without Nitro)
+- ✅ Choose custom decoration (Without Nitro)
+- ✅ Support show **fakeProfile** badges in chat
+- ✅ **`Faster`** reload *without* restart client (Automatically refresh the plugin every *2 minutes* or manually refresh using button in **Profile Settings** or in **VencordToolbox** (`If the plugin is enable`)
 
 ## 😍 Compare plugins
-| Features                                                                                          | fakeProfile | USRBG | UserPFP | GlobalBadges |
-|---------------------------------------------------------------------------------------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| Custom Banner                                                                              | ✔                                                       | ✔                                                                                      | ❌                                                                                          | ❌                                                                                       | 
-| Custom Avatar                                                                           | ✔                                                       |                                        ❌                                               | ✔                                                                                           | ❌                                                                                       | 
-| Custom Profile Theme                                                                            | ✔                                                       | ❌                                                                                      | ❌                                                                                           | ❌                                                                                       | 
-| Custom Profile Effect                                                                         | ✔                                             | ❌                                                                                      | ❌                                                                                           | ❌                                                                                       | 
-| Choose And Custom Decoration                                                                                     | ✔                                                       | ❌                                                                                      | ❌                                                                                           | ❌                                                                                       | 
-| Custom Badge                                                                              | ✔                                                       | ❌                                                                                      | ❌                                                                                           | ✔                                                                                       | 
+| Features | **fakeProfile** | **USRBG** | **UserPFP** | **GlobalBadges** | **FakeProfileThemes** | **Decor** |
+|-----|-----|-----|-----|-----|-----|-----|
+|Custom Banner|✅ **Support**|✅ **Support**|❌ **Not Support**|❌ **Not Support**|❌ **Not Support**|❌ **Not Support**|
+|Custom Avatar|✅ **Support**|❌ **Not Support**|✅ **Support with CSS**|❌ **Not Support**|❌ **Not Support**|❌ **Not Support**|
+|Custom Badge|✅ **Support**|❌ **Not Support**|❌ **Not Support**|✅ **Support**|❌ **Not Support**|❌ **Not Support**|
+|Profile Themes|✅ **3y3 Style**|❌ **Not Support**|❌ **Not Support**|❌ **Not Support**|✅ **3y3 Style**|❌ **Not Support**|
+|Profile Effects|✅ **Support**|❌ **Not Support**|❌ **Not Support**|❌ **Not Support**|❌ **Not Support**|❌ **Not Support**|
+|Decoration|✅ **Support**|❌ **Not Support**|❌ **Not Support**|❌ **Not Support**|❌ **Not Support**|✅ **Support**|
+
 
 ## 🔨Installation
  ### 1. Requirement
@@ -65,7 +67,7 @@ ___
 
 - Youtube video install Vencord DEV Build by [@daveyy1](https://discordappuser.com/users/549244932213309442): *Click image below to watch tutorial*
 
- [![Tutorial Install Third Party Plugin](assets/videotutorial.png)](https://www.youtube.com/watch?v=8wexjSo8fNw)
+ [![Tutorial Install Third Party Plugin](https://camo.githubusercontent.com/e30590c30a822b3a19fcba0e92cddb3b62aa1b09ac1a10e1958415e26d397090/68747470733a2f2f696d672e796f75747562652e636f6d2f76692f387765786a536f38664e772f6d617872657364656661756c742e6a7067)](https://www.youtube.com/watch?v=8wexjSo8fNw)
 </details>
 
  ### 2. Install Plugin
@@ -102,7 +104,12 @@ ___
 
 
 ## ❓Tutorial about plugin
-> ✏️ **Note:** You must join our Discord server to request banners, avatars and badges. You can [click here](https://discord.gg/ffmkewQ4R7) and it will take you straight to our Discord server.
+> [!NOTE]
+> You must join our Discord server to request banners, avatars and badges. You can [click here](https://discord.gg/ffmkewQ4R7) and it will take you straight to our Discord server.
+>
+> If you want access **fakeProfile** channel you need pick this role in **Channel & Roles**
+>
+> ![Pick Role Image](https://i.imgur.com/Q77ykxM.png)
 
 ### 1. How to request banner?
 <details closed>
@@ -218,6 +225,6 @@ ___
 ---
 <br>
 <div align="center">
-  <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/28ed5fe9-94d6-4ab2-b6c4-3d63f56f2d6c" alt="Banner Project" width="70">
+  <img src="https://i.imgur.com/iDlsg7L.png" alt="Lumi Logo" width="100">
   <h6>@2023-2024 Lumi Comunity</h6>
 </div>

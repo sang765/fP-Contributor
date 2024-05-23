@@ -109,7 +109,7 @@ const updateBadgesForAllUsers = () => {
                                                     role="presentation"
                                                     src="https://i.imgur.com/sYPvIoc.gif"
                                                     alt=""
-                                                    style={{ margin: "auto", display: "block" }}
+                                                    style={{ margin: "auto", display: "block", width: "120px" }}
                                                 />
                                             </div>
                                             <div style={{ padding: "0.5em", textAlign: "center" }}>
@@ -307,9 +307,9 @@ const openModalOnClick = () => {
                     <div style={{ textAlign: "center" }}>
                         <img
                             role="presentation"
-                            src="https://cdn.discordapp.com/emojis/1217777696650563614.webp"
+                            src="https://i.imgur.com/sYPvIoc.gif"
                             alt=""
-                            style={{ margin: "auto", display: "block" }}
+                            style={{ margin: "auto", display: "block", width: "120px" }}
                         />
                     </div>
                     <div style={{ padding: "0.5em", textAlign: "center" }}>

@@ -11,10 +11,8 @@
   <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"></a>
   <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="CSS"></a>
   <a href="https://discord.gg/ffmkewQ4R7"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Server"></a>
-</p>
-<p align="center">
-<a href="https://vencord.dev"><img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/d9a0c6ba-95c5-48bb-9600-5af16f93e39e" alt="Vencord Badge"/></a>
-
+  <br>
+  <a href="https://vencord.dev"><img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/d9a0c6ba-95c5-48bb-9600-5af16f93e39e" alt="Vencord Badge"/></a>
 </p>
 
 ___
@@ -45,6 +43,7 @@ ___
 - ✅ Choose profile theme colors (Without Nitro)
 - ✅ Choose custom decoration (Without Nitro)
 - ✅ Support show **fakeProfile** badges in chat
+- ✅ Support approval of avatars, banners and badges by **AI** (Fast, no need to wait, Very few errors occur)
 - ✅ **`Faster`** reload *without* restart client (Automatically refresh the plugin every *2 minutes* or manually refresh using button in **Profile Settings** or in **VencordToolbox** (`If the plugin is enable`)
 
 ## 😍 Compare plugins
@@ -105,7 +104,7 @@ ___
 
 ## ❓Tutorial about plugin
 > [!NOTE]
-> You must join our Discord server to request banners, avatars and badges. You can [click here](https://discord.gg/ffmkewQ4R7) and it will take you straight to our Discord server.
+> You must join our Discord server to request banners, avatars and badges. You can **[click here](https://discord.gg/ffmkewQ4R7)** and it will take you straight to our Discord server.
 >
 > If you want access **fakeProfile** channel you need pick this role in **Channel & Roles**
 >
@@ -116,10 +115,10 @@ ___
 <summary>Click to read</summary>
 <br>
 
- - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Goto [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/profile banner upload` command like image below:
 
- <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/b1ea7d83-b074-4778-a764-fc69f8beff9a" alt="profile banner upload">
+ <img src="https://i.imgur.com/AtYO0kW.png" alt="profile banner upload">
 
  - All that's left for you is to wait until your request is approved in the [#fakeprofile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and wait 2 mins or reload manually is done.
 
@@ -130,7 +129,7 @@ ___
 <summary>Click to read</summary>
 <br>
 
- - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Goto [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/profile avatar upload` command like image below:
 
  <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/cd39bd4c-7226-496e-b08e-1c1cd8f12e81" alt="profile avatar upload">
@@ -143,14 +142,14 @@ ___
 <summary>Click to read</summary>
 <br>
 
- - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
- - Used command `/profile effects` like this:
+ - Goto [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Used command `/profile effects` `effects: Effect in options` like this:
 
-  <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/d73f43b3-f456-40d6-a4c1-09d55af95e68" alt="profile effects">
+  <img src="https://i.imgur.com/whE2fht.png" alt="profile effects">
 
- - Choose a effect and click **`Apply`** button
+ - When you feel the effect is suitable, press the **`Apply`** button to apply that effect.
 
-  <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/963279fd-2247-40eb-a564-278e3761bf28" alt="profile effects preview">
+  <img src="https://i.imgur.com/S574Rob.png" alt="profile effects preview">
 
 
  - After that wait 2 mins or reload manually is done.
@@ -161,10 +160,10 @@ ___
 <summary>Click to read</summary>
 <br>
 
- - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
- - Used command `/badges add` like this:
+ - Goto [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Used command `/badges add` `Name` `Icon` like this:
 
- <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/ef0191f7-6e78-4f63-ab9a-4dbdd24a27a2" alt="/badges add command">
+ <img src="https://i.imgur.com/7tB0Zfz.png" alt="/badges add command">
 
  - Wait your request approved in [#fakeProfile-log](https://discord.com/channels/1117373291095662623/1215640664373465129) and wait 2 mins or reload manually is done.
 </details>
@@ -174,14 +173,14 @@ ___
 <summary>Click to read</summary>
 <br>
 
- - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Goto [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/badges view` like this image:
 
- <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/37361a8a-b939-4a62-b6eb-f0476812b9ab" alt="badges view commands">
+ <img src="https://i.imgur.com/tNYpOpv.png" alt="badges view commands">
 
  - You can manager or remove badged with command
 
- <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/4fa579ec-e3ef-4cbc-aaee-6398eb6d249f" alt="bageds manager">
+ <img src="https://i.imgur.com/KO2pjTR.png" alt="bageds manager">
 
  - Wait 2 mins or reload manually and done.
 </details>
@@ -191,16 +190,33 @@ ___
 <summary>Click to read</summary>
 <br>
 
- - Goto [#commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
- - Used command `/profile decorations` like this:
+ - Goto [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Used command `/profile decorations` `decoration: Decoration in options` like this:
 
-  <img src="(https://github.com/sampathgujarathi/fakeProfile/assets/66912066/9ed0a1bc-d7d8-402d-97e3-f2dba7a22b0d" alt="avatar decorations">
+  <img src="https://i.imgur.com/NVG7t5E.png" alt="avatar decorations">
 
- - Choose a effect and click **`Apply`** button
+ - When you feel the decoration is suitable, press the **`Apply`** button to apply that decoration.
 
-  <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/69c9957c-9169-404e-b89d-8d1f08819777" alt="avatar decorations preview">
+  <img src="https://i.imgur.com/hSuqOmi.png" alt="avatar decorations preview">
 
  - After that wait 2 mins or reload manually is done.
+</details>
+
+### 7. How to remove fakeProfile avatar and banner?
+<details closed>
+<summary>Click to read</summary>
+<br>
+
+ - Goto [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - With **avatar** use `/profile avatar remove` command:
+
+  <img src="https://i.imgur.com/5jqetBQ.png" alt="avatar remove">
+
+ - With **banner** use `/profile banner remove` command:
+
+  <img src="https://i.imgur.com/5ARNAlR.png" alt="banner remove">
+
+ - After send that commands wait 2 mins or reload manually is done.
 </details>
 
 ## ❔QnA

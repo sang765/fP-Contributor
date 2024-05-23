@@ -109,7 +109,7 @@ const updateBadgesForAllUsers = () => {
                                                     role="presentation"
                                                     src="https://i.imgur.com/sYPvIoc.gif"
                                                     alt=""
-                                                    style={{ margin: "auto", display: "block", border-radius: "10%" }}
+                                                    style={{ margin: "auto", display: "block" }}
                                                 />
                                             </div>
                                             <div style={{ padding: "0.5em", textAlign: "center" }}>

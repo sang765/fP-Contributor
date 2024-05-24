@@ -245,7 +245,7 @@ Thanks for all your support for this project.
 </p>
 
 ## ❤️ Final words
-If you feel loved or interested in this project, you can leave us **1 star** and share this project with people who have the same needs as you. That will be a great motivation for them to continue developing this project to become much better. Thank you so much.
+If you feel loved or interested in this project, you can leave us **1 star** and share this project with people who have the same needs as you. That will be a great motivation for we to continue developing this project to become much better. Thank you so much.
 <p align="center">
   <a href="https://github.com/sampathgujarathi/fakeProfile" style="pointer-events: none; cursor: default;">
     <img src="https://m3-markdown-badges.vercel.app/stars/2/2//sampathgujarathi/fakeProfile" alt="Leave us a star" width="200">

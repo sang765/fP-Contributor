@@ -27,6 +27,8 @@ ___
    - [🔨Installation](#installation)
    - [❓Tutorial about plugin](#tutorial-about-plugin)
    - [❔QnA](#qna)
+   - [👍 Contributors](#contributors)
+   - [❤️ Final words](#final-words)
 
 
 
@@ -61,7 +63,7 @@ ___
  ### 1. Requirement
  - The version you are using is **Vencord DEV Build**. If you don't know how to install then you can [click here](https://github.com/Vendicated/Vencord/blob/main/docs/1_INSTALLING.md) to read the installation instructions.
 <details closed>
-<summary>Video tutorial insttall Vencord DEV</summary>
+<summary>Video tutorial install Vencord DEV</summary>
 <br>
 
 - Youtube video install Vencord DEV Build by [@daveyy1](https://discordappuser.com/users/549244932213309442): *Click image below to watch tutorial*
@@ -235,12 +237,40 @@ ___
 </details>
 
 ## 👍 Contributors
-![Contributors](https://contrib.rocks/image?repo=sampathgujarathi/fakeProfile)
+Thanks for all your support for this project.
+
+<p align="center">
+  <a href="https://github.com/sampathgujarathi/fakeProfile" style="pointer-events: none; cursor: default;">
+    <img src="https://contrib.rocks/image?repo=sampathgujarathi/fakeProfile" alt="Contributors" width="200">
+  </a>
+</p>
+
+## ❤️ Final words
+If you feel loved or interested in this project, you can leave us **1 star** and share this project with people who have the same needs as you. That will be a great motivation for them to continue developing this project to become much better. Thank you so much.
+<p align="center">
+  <a href="https://github.com/sampathgujarathi/fakeProfile" style="pointer-events: none; cursor: default;">
+    <img src="https://m3-markdown-badges.vercel.app/stars/2/2//sampathgujarathi/fakeProfile" alt="Leave us a star" width="200">
+  </a>
+</p>
+
+Or you can also donate to us. You will have a special role in our Discord server.
+
+<p align="center">
+  <a href="https://buymeacoffee.com/sampathgujarathi" style="pointer-events: none; cursor: default;">
+    <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/BuyMeACoffee/buymeacoffee3.svg" alt="Buy me a coffee" width="200">
+  </a>
+</p>
+<p align="center">
+  <a href="https://ko-fi.com/sampathgujarathi" style="pointer-events: none; cursor: default;">
+    <img src="https://camo.githubusercontent.com/ce32b4940b9ebf361cfd346ba0582815846406854cd2f701c11a85cb21eaa939/68747470733a2f2f6b6f2d66692e636f6d2f696d672f676974687562627574746f6e5f736d2e737667" alt="Support on Ko-fi" width="200">
+  </a>
+</p>
+
 <!-- END -->
 
 ---
 <br>
 <div align="center">
   <img src="https://i.imgur.com/iDlsg7L.png" alt="Lumi Logo" width="100">
-  <h6>@2023-2024 Lumi Comunity</h6>
+  <h6>@2023-2024 <strong>Lumi Comunity</strong></h6>
 </div>

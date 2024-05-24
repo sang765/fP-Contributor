@@ -240,8 +240,7 @@ ___
 Thanks for all your support for this project.
 
 <p align="center">
-  <a href="https://github.com/sampathgujarathi/fakeProfile" style="pointer-events: none; cursor: default;">
-    <img src="https://contrib.rocks/image?repo=sampathgujarathi/fakeProfile" alt="Contributors" width="200">
+  <a href="https://github.com/sampathgujarathi/fakeProfile/graphs/contributors" style="pointer-events: none; cursor: default;"><img src="https://contrib.rocks/image?repo=sampathgujarathi/fakeProfile" alt="Contributors" width="200">
   </a>
 </p>
 

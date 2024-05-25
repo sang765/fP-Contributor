@@ -219,7 +219,7 @@ ___
  - Click the "**Copy 3y3**" button
  - Paste the 3y3 text anywhere in your ***About Me***
 
-  <img src="https://i.imgur.com/RL4NZvd.gif" alt="avatar remove">
+  <img src="https://i.imgur.com/RL4NZvd.gif" alt="tutorial profile theme">
 </details>
 
 ### 8. How to remove fakeProfile avatar and banner?

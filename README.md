@@ -209,7 +209,20 @@ ___
  - After that wait 2 mins or reload manually is done.
 </details>
 
-### 7. How to remove fakeProfile avatar and banner?
+### 7. How to changed profile theme color?
+<details closed>
+<summary>Click to read</summary>
+<br>
+
+ - Go to your profile settings
+ - Choose your own colors in the Nitro preview
+ - Click the "**Copy 3y3**" button
+ - Paste the 3y3 text anywhere in your ***About Me***
+
+  <img src="https://i.imgur.com/RL4NZvd.gif" alt="avatar remove">
+</details>
+
+### 8. How to remove fakeProfile avatar and banner?
 <details closed>
 <summary>Click to read</summary>
 <br>

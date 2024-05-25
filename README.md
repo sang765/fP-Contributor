@@ -27,8 +27,8 @@ ___
    - [🔨Installation](#installation)
    - [❓Tutorial about plugin](#tutorial-about-plugin)
    - [❔QnA](#qna)
-   - [👍 Contributors](#contributors)
-   - [❤️ Final words](#final-words)
+   - [👍Contributors](#contributors)
+   - [❤️Final words](#%EF%B8%8F-final-words)
 
 
 
@@ -48,7 +48,7 @@ ___
 - ✅ Support approval of avatars, banners and badges by **AI** (Fast, no need to wait, Very few errors occur)
 - ✅ **`Faster`** reload *without* restart client (Automatically refresh the plugin every *2 minutes* or manually refresh using button in **Profile Settings** or in **VencordToolbox** (`If the plugin is enable`)
 
-## 😍 Compare plugins
+## 😍Compare plugins
 | Features | **fakeProfile** | **USRBG** | **UserPFP** | **GlobalBadges** | **FakeProfileThemes** | **Decor** |
 |-----|-----|-----|-----|-----|-----|-----|
 |Custom Banner|✅ **Support**|✅ **Support**|❌ **Not Support**|❌ **Not Support**|❌ **Not Support**|❌ **Not Support**|
@@ -236,7 +236,7 @@ ___
  - As I answered in the 2nd QnA, everything will return to the way it was before you used this plugin. Of course, you can still turn it back on if you want to use it, but if you don't want to use it anymore, you have the right to turn this plugin off.
 </details>
 
-## 👍 Contributors
+## 👍Contributors
 Thanks for all your support for this project.
 
 <p align="center">
@@ -244,7 +244,7 @@ Thanks for all your support for this project.
   </a>
 </p>
 
-## ❤️ Final words
+## ❤️Final words
 If you feel loved or interested in this project, you can leave us **1 star** and share this project with people who have the same needs as you. That will be a great motivation for we to continue developing this project to become much better. Thank you so much.
 <p align="center">
   <a href="https://github.com/sampathgujarathi/fakeProfile" style="pointer-events: none; cursor: default;">

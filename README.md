@@ -38,15 +38,20 @@ ___
 </div>
 
 **fakeProfile** is a plugin for **Vencord** that supports all features related to nitro profile editing `without` the need to use individual plugins to create a complete profile with features such as:
-- ✅ Custom banner (Animated Support)
-- ✅ Custom avatar (Animated Support)
-- ✅ Choose and custom badges (Allow choose default Discord badges)
-- ✅ Choose profile effect (Without Nitro)
-- ✅ Choose profile theme colors (Without Nitro)
-- ✅ Choose custom decoration (Without Nitro)
-- ✅ Support show **fakeProfile** badges in chat
-- ✅ Support approval of avatars, banners and badges by **AI** (Fast, no need to wait, Very few errors occur)
-- ✅ **`Faster`** reload *without* restart client (Automatically refresh the plugin every *2 minutes* or manually refresh using button in **Profile Settings** or in **VencordToolbox** (`If the plugin is enable`)
+
+> - ✅ Supports custom static and animated banner without need nitro[^1] [^2].
+> - ✅ Supports custom static and animated avatar without need nitro[^1] [^2].
+> - ✅ Supports choosing Discord's available badges and you can custom your own badges[^1] [^3].
+> - ✅ Supports choosing Discord's available effect profiles without need nitro[^1] [^2].
+> - ✅ Supports changing theme profile color without needing nitro[^1] [^3].
+> - ✅ Supports selecting and custom decorations without needing nitro[^1] [^2].
+> - ✅ Support show **fakeProfile** badges in chat[^1] [^3].
+> - ✅ Supports approval of avatars, banners and badges using **AI** extremely quickly and conveniently. You won't have to wait too long for your request to be sent.
+> - ✅ We pride ourselves on our plugin being the **`fastest`** and **`fully automatic`** refresh every **2 minutes** from the latest request being approved without having to reload Discord or restart the client and of course you can also refresh the plugin manually if you don't want to wait[^1].
+
+[^1]: This feature is only available to users of this plugin.
+[^2]: The feature only works when other plugins related to this feature are disabled because other plugins can override that plugin's features on this plugin.
+[^3]: This feature may work with some other plugins.
 
 ## 😍Compare plugins
 | Features | **fakeProfile** | **USRBG** | **UserPFP** | **GlobalBadges** | **FakeProfileThemes** | **Decor** |

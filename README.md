@@ -219,7 +219,7 @@ ___
  - Click the "**Copy 3y3**" button
  - Paste the 3y3 text anywhere in your ***About Me***
 
-  <img src="https://i.imgur.com/RL4NZvd.gif" alt="tutorial profile theme">
+  <img src="https://github.com/sang765/videoupload/blob/main/Discord_1ErcXCAVvA.gif?raw=true" alt="tutorial profile theme">
 </details>
 
 ### 8. How to remove fakeProfile avatar and banner?

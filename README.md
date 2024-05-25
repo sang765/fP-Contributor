@@ -47,7 +47,7 @@ ___
 > - ✅ Supports selecting and custom decorations without needing nitro[^1] [^2].
 > - ✅ Support show **fakeProfile** badges in chat[^1] [^3].
 > - ✅ Supports approval of avatars, banners and badges using **AI** extremely quickly and conveniently. You won't have to wait too long for your request to be sent.
-> - ✅ We pride ourselves on our plugin being the **`fastest`** and **`fully automatic`** refresh every **2 minutes** from the latest request being approved without having to reload Discord or restart the client and of course you can also refresh the plugin manually if you don't want to wait[^1].
+> - ✅ We pride ourselves on our plugin being the **`fastest`** and **`fully automatic`** refresh every **2 minutes** from the latest request being approved without having to reload Discord or restart the client and of course you can also refresh the plugin manually if you don't want to wait[^1] [^3].
 
 [^1]: This feature is only available to users of this plugin.
 [^2]: The feature only works when other plugins related to this feature are disabled because other plugins can override that plugin's features on this plugin.

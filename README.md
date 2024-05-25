@@ -28,7 +28,7 @@ ___
    - [❓Tutorial about plugin](#tutorial-about-plugin)
    - [❔QnA](#qna)
    - [👍Contributors](#contributors)
-   - [❤️Final words](#%EF%B8%8F-final-words)
+   - [❤️Final words](#final-words)
 
 
 

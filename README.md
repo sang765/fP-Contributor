@@ -27,6 +27,8 @@ ___
    - [🔨Installation](#installation)
    - [❓Tutorial about plugin](#tutorial-about-plugin)
    - [❔QnA](#qna)
+   - [👍Contributors](#contributors)
+   - [❤️Final words](#%EF%B8%8Ffinal-words)
 
 
 
@@ -36,17 +38,22 @@ ___
 </div>
 
 **fakeProfile** is a plugin for **Vencord** that supports all features related to nitro profile editing `without` the need to use individual plugins to create a complete profile with features such as:
-- ✅ Custom banner (Animated Support)
-- ✅ Custom avatar (Animated Support)
-- ✅ Choose and custom badges (Allow choose default Discord badges)
-- ✅ Choose profile effect (Without Nitro)
-- ✅ Choose profile theme colors (Without Nitro)
-- ✅ Choose custom decoration (Without Nitro)
-- ✅ Support show **fakeProfile** badges in chat
-- ✅ Support approval of avatars, banners and badges by **AI** (Fast, no need to wait, Very few errors occur)
-- ✅ **`Faster`** reload *without* restart client (Automatically refresh the plugin every *2 minutes* or manually refresh using button in **Profile Settings** or in **VencordToolbox** (`If the plugin is enable`)
 
-## 😍 Compare plugins
+> - ✅ Supports custom static and animated banner without need nitro[^1] [^2].
+> - ✅ Supports custom static and animated avatar without need nitro[^1] [^2].
+> - ✅ Supports choosing Discord's available badges and you can custom your own badges[^1] [^3].
+> - ✅ Supports choosing Discord's available effect profiles without need nitro[^1] [^2].
+> - ✅ Supports changing theme profile color without needing nitro[^1] [^3].
+> - ✅ Supports selecting and custom decorations without needing nitro[^1] [^2].
+> - ✅ Support show **fakeProfile** badges in chat[^1] [^3].
+> - ✅ Supports approval of avatars, banners and badges using **AI** extremely quickly and conveniently. You won't have to wait too long for your request to be sent.
+> - ✅ We pride ourselves on our plugin being the **`fastest`** and **`fully automatic`** refresh every **2 minutes** from the latest request being approved without having to reload Discord or restart the client and of course you can also refresh the plugin manually if you don't want to wait[^1] [^3].
+
+[^1]: This feature is only available to users of this plugin.
+[^2]: The feature only works when other plugins related to this feature are disabled because other plugins can override that plugin's features on this plugin.
+[^3]: This feature may work with some other plugins.
+
+## 😍Compare plugins
 | Features | **fakeProfile** | **USRBG** | **UserPFP** | **GlobalBadges** | **FakeProfileThemes** | **Decor** |
 |-----|-----|-----|-----|-----|-----|-----|
 |Custom Banner|✅ **Support**|✅ **Support**|❌ **Not Support**|❌ **Not Support**|❌ **Not Support**|❌ **Not Support**|
@@ -61,7 +68,7 @@ ___
  ### 1. Requirement
  - The version you are using is **Vencord DEV Build**. If you don't know how to install then you can [click here](https://github.com/Vendicated/Vencord/blob/main/docs/1_INSTALLING.md) to read the installation instructions.
 <details closed>
-<summary>Video tutorial insttall Vencord DEV</summary>
+<summary>Video tutorial install Vencord DEV</summary>
 <br>
 
 - Youtube video install Vencord DEV Build by [@daveyy1](https://discordappuser.com/users/549244932213309442): *Click image below to watch tutorial*
@@ -202,7 +209,20 @@ ___
  - After that wait 2 mins or reload manually is done.
 </details>
 
-### 7. How to remove fakeProfile avatar and banner?
+### 7. How to changed profile theme color?
+<details closed>
+<summary>Click to read</summary>
+<br>
+
+ - Go to your profile settings
+ - Choose your own colors in the Nitro preview
+ - Click the "**Copy 3y3**" button
+ - Paste the 3y3 text anywhere in your ***About Me***
+
+  <img src="https://github.com/sang765/videoupload/blob/main/Discord_1ErcXCAVvA.gif?raw=true" alt="tutorial profile theme">
+</details>
+
+### 8. How to remove fakeProfile avatar and banner?
 <details closed>
 <summary>Click to read</summary>
 <br>
@@ -234,13 +254,27 @@ ___
  - As I answered in the 2nd QnA, everything will return to the way it was before you used this plugin. Of course, you can still turn it back on if you want to use it, but if you don't want to use it anymore, you have the right to turn this plugin off.
 </details>
 
-## 👍 Contributors
-![Contributors](https://contrib.rocks/image?repo=sampathgujarathi/fakeProfile)
+## 👍Contributors
+Thanks for all your support for this project.
+
+<p align="center">
+  <a href="https://github.com/sampathgujarathi/fakeProfile/graphs/contributors" style="pointer-events: none; cursor: default;"><img src="https://contrib.rocks/image?repo=sampathgujarathi/fakeProfile" alt="Contributors" width="200">
+  </a>
+</p>
+
+## ❤️Final words
+If you feel loved or interested in this project, you can leave us **1 star** and share this project with people who have the same needs as you. That will be a great motivation for we to continue developing this project to become much better. Thank you so much.
+<p align="center">
+  <a href="https://github.com/sampathgujarathi/fakeProfile" style="pointer-events: none; cursor: default;">
+    <img src="https://m3-markdown-badges.vercel.app/stars/2/2//sampathgujarathi/fakeProfile" alt="Leave us a star" width="200">
+  </a>
+</p>
+
 <!-- END -->
 
 ---
 <br>
 <div align="center">
   <img src="https://i.imgur.com/iDlsg7L.png" alt="Lumi Logo" width="100">
-  <h6>@2023-2024 Lumi Comunity</h6>
+  <h6>@2023-2024 <strong>Lumi Comunity</strong></h6>
 </div>

@@ -270,15 +270,6 @@ If you feel loved or interested in this project, you can leave us **1 star** and
   </a>
 </p>
 
-Or you can also donate to us. You will have a special role in our **[Discord](https://discord.gg/ffmkewQ4R7)** server.
-
-<p align="center">
-  <a href="https://buymeacoffee.com/sampathgujarathi" style="pointer-events: none; cursor: default;"><img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/BuyMeACoffee/buymeacoffee3.svg" alt="Buy me a coffee" width="170">
-  </a>
-  <a href="https://ko-fi.com/sampathgujarathi" style="pointer-events: none; cursor: default;"><img src="https://camo.githubusercontent.com/ce32b4940b9ebf361cfd346ba0582815846406854cd2f701c11a85cb21eaa939/68747470733a2f2f6b6f2d66692e636f6d2f696d672f676974687562627574746f6e5f736d2e737667" alt="Support on Ko-fi" width="200">
-  </a>
-</p>
-
 <!-- END -->
 
 ---

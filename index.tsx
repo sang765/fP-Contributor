@@ -48,7 +48,7 @@ const updateBadgesForAllUsers = () => {
                         description: badge.description,
                         props: {
                             style: {
-                                borderRadius: "5%",
+                                borderRadius: "15%",
                                 transform: "scale(0.9)"
                             }
                         },

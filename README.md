@@ -126,10 +126,7 @@ ___
 ## ❓Tutorial about plugin
 > [!NOTE]
 > You must join our Discord server to request banners, avatars and badges. You can **[click here](https://discord.gg/ffmkewQ4R7)** and it will take you straight to our Discord server.
->
-> If you want access **fakeProfile** channel you need pick this role in **Channel & Roles**
->
-> ![Pick Role Image](https://i.imgur.com/Q77ykxM.png)
+
 
 ### 1. How to request banner?
 <details closed>

@@ -2,18 +2,20 @@
   <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/6e4d4059-13aa-40a4-abb1-31543322f64a" alt="Banner Project" width="550">
 
   <h1><img src="https://i.imgur.com/iDlsg7L.png" alt="Lumi Logo" width="25"><strong>・fakeProfile</strong></h1>
-  An <a href="https://vencord.dev/"><strong>all-in-one Vencord</strong></a> plugin to customize your Discord profile
+  An <strong>all-in-one</strong></a> plugin to customize your Discord profile
 </div>
 
 <!-- MARKDOWN BADGED -->
 <br>
-<p align="center">
+<div align="center">
   <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"></a>
   <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="CSS"></a>
   <a href="https://discord.gg/ffmkewQ4R7"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Server"></a>
   <br>
-  <a href="https://vencord.dev"><img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/d9a0c6ba-95c5-48bb-9600-5af16f93e39e" alt="Vencord Badge"/></a>
-</p>
+  <h6><strong>Support For There Clients</strong></h6>
+  <a href="https://vencord.dev"><img src="https://i.imgur.com/O9cPuLV.png" alt="Vencord" width="50"></a>
+  <a href="https://github.com/pyoncord/Bunny"><img src="https://i.imgur.com/YjtQqBQ.png" alt="Pyoncord" width="50"></a>
+</div>
 
 ___
 
@@ -65,6 +67,10 @@ ___
 
 
 ## 🔨Installation
+<details closed>
+<summary>Vencord (DEV Build)</summary>
+<br>
+
  ### 1. Requirement
  - The version you are using is **Vencord DEV Build**. If you don't know how to install then you can [click here](https://github.com/Vendicated/Vencord/blob/main/docs/1_INSTALLING.md) to read the installation instructions.
 <details closed>
@@ -106,16 +112,21 @@ ___
  pnpm inject
  ```
  That all. Restart your Discord client and enjoy.
+</details>
+<details closed>
+<summary>Pyoncord</summary>
+<br>
 
-
+ ### Install with plugin URL
+ ```
+ https://fakeprofile.sampath.tech/
+ ```
+</details>
 
 ## ❓Tutorial about plugin
 > [!NOTE]
 > You must join our Discord server to request banners, avatars and badges. You can **[click here](https://discord.gg/ffmkewQ4R7)** and it will take you straight to our Discord server.
->
-> If you want access **fakeProfile** channel you need pick this role in **Channel & Roles**
->
-> ![Pick Role Image](https://i.imgur.com/Q77ykxM.png)
+
 
 ### 1. How to request banner?
 <details closed>

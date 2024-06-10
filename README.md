@@ -112,9 +112,7 @@ ___
  pnpm inject
  ```
  That all. Restart your Discord client and enjoy.
-
 </details>
-
 <details closed>
 <summary>Pyoncord</summary>
 <br>
@@ -123,7 +121,6 @@ ___
  ```
  https://fakeprofile.sampath.tech/
  ```
-
 </details>
 
 ## ❓Tutorial about plugin

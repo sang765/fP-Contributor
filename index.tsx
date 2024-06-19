@@ -48,7 +48,7 @@ const updateBadgesForAllUsers = () => {
                         description: badge.description,
                         props: {
                             style: {
-                                borderRadius: "15%",
+                                borderRadius: "50%",
                                 transform: "scale(0.9)"
                             }
                         },
@@ -418,16 +418,10 @@ export default definePlugin({
         },
         {
             find: ".NITRO_BANNER,",
-            replacement: [
-                {
-                    match: /(\i)\.premiumType/,
-                    replace: "$self.premiumHook($1)||$&"
-                },
-                {
-                    match: /\?\(0,\i\.jsx\)\(\i,{type:\i,shown/,
-                    replace: "&&$self.shouldShowBadge(arguments[0])$&"
-                }
-            ]
+            replacement: {
+                match: /\?\(0,\i\.jsx\)\(\i,{type:\i,shown/,
+                replace: "&&$self.shouldShowBadge(arguments[0])$&"
+            }
         },
         {
             find: "=!1,canUsePremiumCustomization:",
@@ -437,7 +431,7 @@ export default definePlugin({
             }
         },
         {
-            find: "BannerLoadingStatus:function",
+            find: ".banner)==null",
             replacement: {
                 match: /(?<=void 0:)\i.getPreviewBanner\(\i,\i,\i\)/,
                 replace: "$self.useBannerHook(arguments[0])||$&"
@@ -489,7 +483,7 @@ export default definePlugin({
             find: "renderAvatarWithPopout(){",
             replacement: [
                 {
-                    match: /(?<=getAvatarDecorationURL\)\({avatarDecoration:)(\i).avatarDecoration(?=,)/,
+                    match: /(?<=\)\({(?:(?:.(?!\)}))*,)?avatarDecoration:)(\i)\.avatarDecoration(?=,|}\))/,
                     replace: "$self.useUserAvatarDecoration($1)??$&"
                 }
             ]

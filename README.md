@@ -39,7 +39,7 @@ ___
   <img src="https://github.com/sampathgujarathi/fakeProfile/blob/137947f167b631f6fdbd2ff07ba26e48016c5658/assets/profilepreview.png?raw=true" alt="Preview" width="500">
 </div>
 
-**fakeProfile** is a plugin for **Vencord** & **Pyoncord** that supports all features related to nitro profile editing without need to use individual plugins to create a complete profile with features such as:
+**fakeProfile** is a plugin for **Discord mod client** that supports all features related to nitro profile editing without need to use individual plugins to create a complete profile with features such as:
 
 > - ✅ Custom static and animated banner without Nitro[^1] [^2].
 > - ✅ Custom static and animated avatar without Nitro[^1] [^2].
@@ -173,9 +173,21 @@ ___
  - After that wait 2 mins or reload manually is done.
 </details>
 
-### 4. How to request badge?
+### 4. How to choose default discord badges or request a custom badge?
 <details closed>
-<summary>Click to read</summary>
+<summary>Choose default badges</summary>
+<br>
+
+ - Go to [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Used command `/badges select` `name` like this:
+
+ <img src="https://i.imgur.com/9EnyNxY.png" alt="/badges select command">
+
+ - Wait 2 mins or reload manually is done.
+
+</details>
+<details closed>
+<summary>Request custom badges</summary>
 <br>
 
  - Go to [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)

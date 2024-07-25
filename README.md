@@ -13,8 +13,9 @@
   <a href="https://discord.gg/ffmkewQ4R7"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Server"></a>
   <br>
   <h6><strong>Support For There Clients</strong></h6>
-  <a href="https://vencord.dev"><img src="https://i.imgur.com/O9cPuLV.png" alt="Vencord" width="50"></a>
   <a href="https://github.com/pyoncord/Bunny"><img src="https://i.imgur.com/YjtQqBQ.png" alt="Pyoncord" width="50"></a>
+  <a href="https://vencord.dev"><img src="https://i.imgur.com/O9cPuLV.png" alt="Vencord" width="50"></a>
+  <a href="https://enmity.unbound.rip/"><img src="https://i.imgur.com/L1xE4Bd.png" alt="Enmity" width="50"></a>
 </div>
 
 ___
@@ -112,6 +113,7 @@ ___
  pnpm inject
  ```
  That all. Restart your Discord client and enjoy.
+
 </details>
 <details closed>
 <summary>Pyoncord</summary>
@@ -119,7 +121,18 @@ ___
 
  ### Install with plugin URL
  ```
- https://fakeprofile.sampath.tech/
+https://fakeprofile.sampath.tech/
+ ```
+</details>
+
+</details>
+<details closed>
+<summary>Enmity</summary>
+<br>
+
+ ### Install with Github raw URL:
+ ```
+ https://raw.githubusercontent.com/sampathgujarathi/bunny-plugin/master/src/index.tsx
  ```
 </details>
 

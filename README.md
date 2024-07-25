@@ -146,7 +146,7 @@ https://fakeprofile.sampath.tech/
 <summary>Click to read</summary>
 <br>
 
- - Go to [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Go to [#command](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/profile banner upload` command like image below:
 
  <img src="https://i.imgur.com/AtYO0kW.png" alt="profile banner upload">
@@ -160,7 +160,7 @@ https://fakeprofile.sampath.tech/
 <summary>Click to read</summary>
 <br>
 
- - Go to [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Go to [#command](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/profile avatar upload` command like image below:
 
  <img src="https://github.com/sampathgujarathi/fakeProfile/assets/66912066/cd39bd4c-7226-496e-b08e-1c1cd8f12e81" alt="profile avatar upload">
@@ -173,7 +173,7 @@ https://fakeprofile.sampath.tech/
 <summary>Click to read</summary>
 <br>
 
- - Go to [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Go to [#command](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/profile effects` `effects: Effect in options` like this:
 
   <img src="https://i.imgur.com/whE2fht.png" alt="profile effects">
@@ -191,7 +191,7 @@ https://fakeprofile.sampath.tech/
 <summary>Choose default badges</summary>
 <br>
 
- - Go to [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Go to [#command](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/badges select` `name` like this:
 
  <img src="https://i.imgur.com/9EnyNxY.png" alt="/badges select command">
@@ -203,7 +203,7 @@ https://fakeprofile.sampath.tech/
 <summary>Request custom badges</summary>
 <br>
 
- - Go to [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Go to [#command](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/badges add` `Name` `Icon` like this:
 
  <img src="https://i.imgur.com/7tB0Zfz.png" alt="/badges add command">
@@ -216,7 +216,7 @@ https://fakeprofile.sampath.tech/
 <summary>Click to read</summary>
 <br>
 
- - Go to [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Go to [#command](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used `/badges view` like this image:
 
  <img src="https://i.imgur.com/tNYpOpv.png" alt="badges view commands">
@@ -233,7 +233,7 @@ https://fakeprofile.sampath.tech/
 <summary>Click to read</summary>
 <br>
 
- - Go to [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Go to [#command](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - Used command `/profile decorations` `decoration: Decoration in options` like this:
 
   <img src="https://i.imgur.com/NVG7t5E.png" alt="avatar decorations">
@@ -263,7 +263,7 @@ https://fakeprofile.sampath.tech/
 <summary>Click to read</summary>
 <br>
 
- - Go to [#fakeprofile-commands](https://discord.com/channels/1117373291095662623/1215640671457771540)
+ - Go to [#command](https://discord.com/channels/1117373291095662623/1215640671457771540)
  - With **avatar** use `/profile avatar remove` command:
 
   <img src="https://i.imgur.com/5jqetBQ.png" alt="avatar remove">

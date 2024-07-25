@@ -132,7 +132,7 @@ https://fakeprofile.sampath.tech/
 
  ### Install with Github raw URL:
  ```
- https://raw.githubusercontent.com/sampathgujarathi/fakeProfile/main/index.tsx
+ https://raw.githubusercontent.com/sampathgujarathi/bunny-plugin/master/src/index.tsx
  ```
 </details>
 

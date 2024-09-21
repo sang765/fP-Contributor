@@ -24,15 +24,6 @@
 
 <!-- BODY -->
 
-<div align="center">
-  <img src="https://i.imgur.com/7Ef4lok.png" width="70"></a>
-  <h3><strong>Check our new website</strong></h3>
-  <h4><a href="https://fakeprofile.is-always.online">https://fakeprofile.is-always.online</a></h4>
-  <h3><strong>Plugin sync - Discord Login - No Join Server Request</strong></h3>
-  <img src="https://i.imgur.com/cYSuwJw.png"></a>
-  <h6>Screenshot by <strong><a href="https://github.com/sang765">sang765</a></strong></h6>
-</div>
-
 ## 🖥️Selection
 
 - [fakeProfile](#fakeprofile)

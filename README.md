@@ -33,7 +33,7 @@
   <h6>Screenshot by <strong><a href="https://github.com/sang765">sang765</a></strong></h6>
 </div>
 
-## 🖥️Selectiona
+## 🖥️Selection
 
 - [fakeProfile](#fakeprofile)
   - [❓What is fakeProfile?](#what-is-fakeprofile)
